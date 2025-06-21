@@ -50,8 +50,8 @@ const services = [
   {
     title: "ChanRe Publishers",
     shortInfo: "A unit of ChanRe Healthcare Pvt. Ltd.",
-    shortInfo1: "Helping independent content and media campaigns thrive.",
-    moreInfo: "Publishing services tailored to your goals.",
+    shortInfo1: "We help independently published content solutions and integrated media campaigns through our channel.",
+    moreInfo: "We help independently published content solutions and integrated media campaigns through our channel.",
     btnText: "Visit Site",
     bg: "from-emerald-100 to-teal-200",
     link: "https://chanrepublishers.com"
@@ -59,8 +59,8 @@ const services = [
   {
     title: "ChanRe Med Soft",
     shortInfo: "A unit of ChanRe Health Care Pvt. Ltd.",
-    shortInfo1: "Lightning fast web-based healthcare software.",
-    moreInfo: "Fast, secure, and modern healthcare software solutions.",
+    shortInfo1: "ChanReMedSoft is Web based software with lightning speed access.",
+    moreInfo: "ChanReMedSoft is Web based software with lightning speed access.",
     btnText: "Visit Site",
     bg: "from-purple-100 to-fuchsia-200",
     link: "https://chanremedsoft.com"   
@@ -68,8 +68,8 @@ const services = [
   {
     title: "ChanRe Bookshop",
     shortInfo: "A unit of ChanRe Healthcare Pvt. Ltd.",
-    shortInfo1: "Your hub for healthcare books and journals.",
-    moreInfo: "Browse publications and knowledge resources.",
+    shortInfo1: "ChanRe Journals functions as an ideal partner for publishing all kind of research in a comprehensive and timely manner.",
+    moreInfo: "ChanRe Journals functions as an ideal partner for publishing all kind of research in a comprehensive and timely manner.",
     btnText: "Visit Site",
     bg: "from-orange-100 to-amber-200",
     link: "https://chanrebookshop.com"
@@ -77,8 +77,8 @@ const services = [
   {
     title: "ChanRe Ebook",
     shortInfo: "A unit of ChanRe Healthcare Pvt. Ltd.",
-    shortInfo1: "Publishing & digital media services for the healthcare industry.",
-    moreInfo: "Bridge the gap between health and digital publishing.",
+    shortInfo1: "We help independently published content solutions and integrated media campaigns through our channel.",
+    moreInfo: "We help independently published content solutions and integrated media campaigns through our channel.",
     btnText: "Visit Site",
     bg: "from-red-100 to-rose-200",
     link: "https://chanreebook.com" 

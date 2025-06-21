@@ -1,5 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -56,12 +57,12 @@ const HeroSection = () => {
           transition={{ delay: 0.4, duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <motion.button
+          <Link to="/our-units"><motion.button
             whileHover={{ scale: 1.05 }}
             className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition"
           >
             Explore Our Units
-          </motion.button>
+          </motion.button></Link>
           <motion.button
             whileHover={{ scale: 1.05 }}
             className="px-6 py-3 border border-blue-600 text-blue-600 rounded-xl hover:bg-blue-100 transition"

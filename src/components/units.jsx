@@ -74,7 +74,7 @@ const Units = () => {
         >
           <motion.div whileHover={{ scale: 1.05 }}>
             <Link
-              to="/units"
+              to="/our-units"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
             >
               Explore Our Units
