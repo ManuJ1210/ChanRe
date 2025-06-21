@@ -54,7 +54,7 @@ const services = [
     moreInfo: "We help independently published content solutions and integrated media campaigns through our channel.",
     btnText: "Visit Site",
     bg: "from-emerald-100 to-teal-200",
-    link: "https://chanrepublishers.com"
+    link: "https://chanrepublisher.com/"
   },
   {
     title: "ChanRe Med Soft",

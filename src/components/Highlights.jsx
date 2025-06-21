@@ -41,7 +41,7 @@ const GroupHighlights = () => {
           >
             <div className="text-5xl mb-3">{item.icon}</div>
             <h3 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
-              {inView && <CountUp end={item.end} duration={2.5} separator="," />}
+              {inView && <CountUp end={item.end} duration={1.5} separator="," />}
               {item.label === "Patients Served" && "+"}
             </h3>
             <p className="mt-2 text-base text-gray-700 font-medium">{item.label}</p>

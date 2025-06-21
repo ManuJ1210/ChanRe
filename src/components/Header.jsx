@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const activeLink = "text-blue-700 font-semibold scale-105";
+  const activeLink = "text-blue-700 font-semibold border-b-2 transition";
 
   useEffect(() => {
     const handleResize = () => {
