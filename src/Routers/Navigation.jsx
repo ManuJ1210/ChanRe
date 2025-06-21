@@ -1,0 +1,21 @@
+import { Routes, Route ,  useLocation } from "react-router-dom";
+import Homepage from "../pages/Homepage";
+import About from "../pages/About";
+import OurUnits from "../pages/Ourunits";
+import { AnimatePresence } from 'framer-motion';
+
+
+
+
+export default function AppRoutes() {
+   const location = useLocation();
+  return (
+    <AnimatePresence mode="wait">
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/our-units" element={<OurUnits />} />
+    </Routes>
+    </AnimatePresence>
+  );
+}
