@@ -14,7 +14,7 @@ const GroupHighlights = () => {
 
   return (
     <section ref={ref} className="py-20 px-6 md:px-20 mt-5">
-      {/* Title */}
+     
       <motion.div
         className="text-center mb-12"
         initial={{ opacity: 0, y: -30 }}
@@ -28,7 +28,7 @@ const GroupHighlights = () => {
         </p>
       </motion.div>
 
-      {/* Cards */}
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {highlights.map((item, index) => (
           <motion.div

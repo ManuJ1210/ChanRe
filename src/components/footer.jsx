@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className=" text-gray-700 py-16 px-6 md:px-20 ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        {/* Important Links */}
+ 
         <div>
           <h6 className="text-lg font-semibold text-blue-700 mb-4">Important Links</h6>
           <ul className="space-y-2">
@@ -16,7 +16,7 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Company */}
+
         <div>
           <h6 className="text-lg font-semibold text-blue-700 mb-4">Company</h6>
           <ul className="space-y-2">
@@ -27,7 +27,7 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Social Media */}
+  
         <div>
           <h6 className="text-lg font-semibold text-blue-700 mb-4">Follow Us</h6>
           <div className="flex gap-6">
@@ -44,7 +44,7 @@ function Footer() {
         </div>
       </div>
 
-      {/* Bottom Note */}
+    
       <div className="mt-12 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} ChanRe Group. All rights reserved.
       </div>

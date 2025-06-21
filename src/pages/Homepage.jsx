@@ -22,7 +22,7 @@ function Homepage() {
     <AboutSection />
 
     <section className="py-16 px-6">
-      {/* Section Heading */}
+   
       <motion.h2
         className="text-4xl font-bold text-center text-gray-900"
         initial={{ opacity: 0, y: -30 }}
@@ -33,7 +33,7 @@ function Homepage() {
         Why Choose Us
       </motion.h2>
 
-      {/* Subheading */}
+      
       <motion.p
         className="text-center text-gray-600 mt-3 text-base max-w-2xl mx-auto"
         initial={{ opacity: 0 }}
@@ -44,7 +44,6 @@ function Homepage() {
         Celebrating over two decades of care, innovation, and trust in healthcare.
       </motion.p>
 
-      {/* Features Grid */}
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
           {

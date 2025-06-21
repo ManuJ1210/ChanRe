@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section className="w-full py-20 px-6 md:px-24 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
-      {/* Left Section */}
+  
       <motion.div
         className="md:w-1/2 text-center md:text-left max-w-2xl"
         initial={{ opacity: 0, x: -60 }}
@@ -71,7 +71,7 @@ const HeroSection = () => {
         </motion.div>
       </motion.div>
 
-      {/* Right Section - Image */}
+   
       <motion.div
         className="md:w-1/2 flex justify-center"
         initial={{ opacity: 0, x: 60 }}

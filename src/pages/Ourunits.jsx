@@ -123,7 +123,7 @@ function OurUnits() {
             <p className="text-gray-700 font-semibold text-sm">{service.shortInfo}</p>
             <p className="mt-3 text-gray-600 text-sm">{service.shortInfo1}</p>
 
-            {/* Overlay on Hover */}
+           
             <motion.div
               className="absolute inset-0 bg-[#2a5f64] text-white p-6 flex flex-col justify-center transform translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out"
             >

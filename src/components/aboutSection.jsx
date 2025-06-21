@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section className="py-20 px-6 md:px-20">
       <div className="max-w-6xl mx-auto">
-        {/* Title */}
+
         <motion.h2
         className="text-4xl font-bold text-center mb-4 text-gray-800"
         initial={{ opacity: 0, y: -30 }}
@@ -16,7 +16,7 @@ const AboutSection = () => {
         About us
       </motion.h2>
 
-        {/* Paragraph */}
+
         <motion.p
           className="text-center text-lg text-gray-700 leading-relaxed px-2 sm:px-10 md:px-28"
           initial={{ opacity: 0 }}
@@ -28,7 +28,7 @@ const AboutSection = () => {
           We specialize in Rheumatology, Immunology, and comprehensive Diagnostic Services across India.
         </motion.p>
 
-        {/* Feature Cards */}
+       
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
           {[
             {
