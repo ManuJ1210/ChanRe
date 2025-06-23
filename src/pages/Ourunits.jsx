@@ -91,7 +91,7 @@ function OurUnits() {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1768);
     };
     checkMobile();
     window.addEventListener('resize', checkMobile);
