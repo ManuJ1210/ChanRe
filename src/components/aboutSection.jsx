@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 px-6 md:px-20">
+    <section className="py-20 px-6 md:px-20 bg-blue-500">
       <div className="max-w-6xl mx-auto">
 
         <motion.h2
-        className="text-4xl font-bold text-center mb-4 text-gray-800"
+        className="text-4xl font-bold text-center mb-4 text-white"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -18,7 +18,7 @@ const AboutSection = () => {
 
 
         <motion.p
-          className="text-center text-lg text-gray-700 leading-relaxed px-2 sm:px-10 md:px-28"
+          className="text-center text-lg text-white leading-relaxed px-2 sm:px-10 md:px-28"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}

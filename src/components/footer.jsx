@@ -2,11 +2,12 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className=" text-gray-700 py-16 px-6 md:px-20 ">
+    <>
+    <footer className=" text-white py-16 mt-20 px-6 md:px-20 bg-gray-800">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
  
         <div>
-          <h6 className="text-lg font-semibold text-blue-700 mb-4">Important Links</h6>
+          <h6 className="text-lg font-semibold text-white mb-4">Important Links</h6>
           <ul className="space-y-2">
             <li className="hover:text-blue-600 transition">ChanRe RICR</li>
             <li className="hover:text-blue-600 transition">Research Assist</li>
@@ -18,7 +19,7 @@ function Footer() {
 
 
         <div>
-          <h6 className="text-lg font-semibold text-blue-700 mb-4">Company</h6>
+          <h6 className="text-lg font-semibold text-white mb-4">Company</h6>
           <ul className="space-y-2">
             <li className="hover:text-blue-600 transition">About Us</li>
             <li className="hover:text-blue-600 transition">Contact</li>
@@ -29,7 +30,7 @@ function Footer() {
 
   
         <div>
-          <h6 className="text-lg font-semibold text-blue-700 mb-4">Follow Us</h6>
+          <h6 className="text-lg font-semibold text-white mb-4">Follow Us</h6>
           <div className="flex gap-6">
             <a href="#" className="hover:text-blue-600 transition">
               <FaFacebookF size={22} />
@@ -43,12 +44,14 @@ function Footer() {
           </div>
         </div>
       </div>
+      </footer>
 
     
-      <div className="mt-12 text-center text-sm text-gray-500">
+      <div className="text-center text-md font-semibold text-white h-15 content-center bg-gray-900 ">
         © {new Date().getFullYear()} ChanRe Group. All rights reserved.
       </div>
-    </footer>
+      </>
+    
   );
 }
 

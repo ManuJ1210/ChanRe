@@ -44,7 +44,7 @@ function Homepage() {
         Celebrating over two decades of care, innovation, and trust in healthcare.
       </motion.p>
 
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="mt-12  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
           {
             title: "24×7 Customer Support",
@@ -73,7 +73,7 @@ function Homepage() {
         ].map((item, i) => (
           <motion.div
             key={i}
-            className={`bg-gradient-to-br ${item.gradient} p-6 rounded-xl shadow-md text-center`}
+            className={`bg-gradient-to-br ${item.gradient} p-10 rounded-xl shadow-md text-center`}
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 40 }}
             transition={{ duration: 0.4, delay: i * 0.1 }}

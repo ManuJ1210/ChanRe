@@ -25,7 +25,7 @@ function Header() {
   };
 
   return (
-    <nav className="sticky top-0 z-50  bg-gradient-to-br from-blue-50 via-blue-50 to-blue-50 shadow-md">
+    <nav className="sticky top-0 z-50 bg-white shadow-md">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
      

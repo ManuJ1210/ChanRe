@@ -13,7 +13,7 @@ const GroupHighlights = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
-    <section ref={ref} className="py-20 px-6 md:px-20 mt-5">
+    <section ref={ref} className=" py-20 px-6 md:px-20 mt-15 bg-blue-500">
      
       <motion.div
         className="text-center mb-12"
@@ -22,8 +22,8 @@ const GroupHighlights = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-4xl font-bold text-gray-800">Group Highlights</h2>
-        <p className="text-gray-600 mt-2 text-base sm:text-lg">
+        <h2 className="text-4xl font-bold text-white">Group Highlights</h2>
+        <p className="text-white mt-2 text-base sm:text-lg">
           Celebrating our legacy of care and innovation
         </p>
       </motion.div>

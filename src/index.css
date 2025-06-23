@@ -2,5 +2,5 @@
 @plugin "daisyui";
 
 body {
-  @apply bg-gradient-to-br from-blue-50 via-blue-50 to-blue-50;
+  @apply bg-white;
 }
