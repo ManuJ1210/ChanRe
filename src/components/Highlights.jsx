@@ -13,7 +13,7 @@ const GroupHighlights = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
-    <section ref={ref} className=" py-20 px-6 md:px-20 mt-15 bg-blue-500">
+    <section ref={ref} className=" py-20 px-6 md:px-20 mt-15 bg-gradient-to-r from-blue-400 to-blue-700">
      
       <motion.div
         className="text-center mb-12"

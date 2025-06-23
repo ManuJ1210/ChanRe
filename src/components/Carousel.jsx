@@ -20,7 +20,7 @@ const HeroSection = () => {
               words={["Serve", "Care", "Innovate", "Heal"]}
               loop={true}
               cursor
-              cursorStyle="|"
+              cursorStyle="/"
               typeSpeed={90}
               deleteSpeed={50}
               delaySpeed={1500}

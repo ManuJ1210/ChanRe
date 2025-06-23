@@ -8,7 +8,6 @@ import {
   FaLaptopMedical,
   FaBook,
   FaFileAlt,
-  FaCode,
   FaGlobe,
 } from "react-icons/fa";
 

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 px-6 md:px-20 bg-blue-500">
+    <section className="py-20 px-6 md:px-20 bg-gradient-to-r from-blue-400 to-blue-700">
       <div className="max-w-6xl mx-auto">
 
         <motion.h2
