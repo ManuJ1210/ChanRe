@@ -101,6 +101,14 @@ function Header() {
           >
             Home
           </Link>
+          
+          <Link
+            to="/our-units"
+            onClick={closeMobileMenu}
+            className="block text-base font-medium text-gray-700 hover:bg-blue-50 px-3 py-2 rounded"
+          >
+            Our Units
+          </Link>
           <Link
             to="/about"
             onClick={closeMobileMenu}
@@ -109,11 +117,11 @@ function Header() {
             About Us
           </Link>
           <Link
-            to="/our-units"
+            to="/contact"
             onClick={closeMobileMenu}
             className="block text-base font-medium text-gray-700 hover:bg-blue-50 px-3 py-2 rounded"
           >
-            Our Units
+            Contact Us
           </Link>
         </div>
       )}
