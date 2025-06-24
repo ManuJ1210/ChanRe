@@ -43,14 +43,7 @@ function Header() {
             >
               Home
             </NavLink>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive ? activeLink : "text-gray-800 font-medium hover:text-blue-600 transition"
-              }
-            >
-              About Us
-            </NavLink>
+            
             <NavLink
               to="/our-units"
               className={({ isActive }) =>
@@ -58,6 +51,14 @@ function Header() {
               }
             >
               Our Units
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? activeLink : "text-gray-800 font-medium hover:text-blue-600 transition"
+              }
+            >
+             About Us
             </NavLink>
 
              <NavLink
