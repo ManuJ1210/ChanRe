@@ -59,6 +59,15 @@ function Header() {
             >
               Our Units
             </NavLink>
+
+             <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? activeLink : "text-gray-800 font-medium hover:text-blue-600 transition"
+              }
+            >
+              Contact Us
+            </NavLink>
           </div>
 
        
