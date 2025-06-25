@@ -47,7 +47,8 @@ const Units = () => {
       </motion.p>
 
       <div className="w-full mt-12 px-6 md:px-12 lg:px-20 rounded-2xl">
-        <ul className="grid grid-cols-1 p-8 rounded-2xl sm:grid-cols-2 md:grid-cols-3 border border-gray-300 gap-6 bg-white">
+        <div className="bg-white border border-gray-300 p-6 rounded-lg ">
+        <ul className="grid grid-cols-1 p-8 rounded-2xl sm:grid-cols-2 md:grid-cols-3  gap-6 bg-white">
           {units.map((unit, index) => (
             <motion.li
               key={index}
@@ -78,8 +79,10 @@ const Units = () => {
             >
               Explore Our Units
             </Link>
+            
           </motion.div>
         </motion.div>
+        </div>
       </div>
     </section>
   );

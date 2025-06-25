@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const ContactPage = () => {
     return (
-        <div className="bg-white text-gray-800">
+        <div className=" text-gray-800">
 
             <section className="py-16 px-6 text-center">
                 <motion.h2 className="text-4xl font-bold mb-2 "
@@ -50,7 +50,7 @@ const ContactPage = () => {
             </section>
 
 
-            <section className="bg-gradient-to-r from-blue-500 to-blue-700 py-10 px-6 border-t align-middle border-gray-300 h-80">
+            <section className="bg-gradient-to-r from-blue-500 to-blue-700 py-10 px-6 border-t align-middle border-gray-300 mx-auto">
                 <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
 
                     <motion.div

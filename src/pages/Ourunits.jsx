@@ -20,15 +20,16 @@ const services = [
     bg: "from-indigo-100 to-violet-200",
     link: "https://research-assist.com"
   },
-  {
-    title: "IARET",
-    shortInfo: "A unit of Immunology and Arthritis and Research Pvt. Ltd.",
-    shortInfo1: "Immunology & Arthritis Research & Education Trust-Help today because tomorrow you may be the one who needs helping! Forget what you can get and see what you can give.",
-    moreInfo: "Immunology & Arthritis Research & Education Trust-Help today because tomorrow you may be the one who needs helping! Forget what you can get and see what you can give.",
+   {
+    title: "ChanRe Care",
+    shortInfo: "A unit of ChanRe Healthcare Pvt. Ltd.",
+    shortInfo1: "Our comprehensive weight loss management program combines physiotherapy, personalized diet plans, and guided yoga sessions to help you achieve sustainable results.",
+    moreInfo: "Our comprehensive weight loss management program combines physiotherapy, personalized diet plans, and guided yoga sessions to help you achieve sustainable results.",
     btnText: "Visit Site",
-    bg: "from-yellow-100 to-orange-200",
-    link: "https://www.iaret.org/"
+    bg: "from-red-100 to-rose-200",
+    link: "https://chanrecare.com/"
   },
+  
   {
     title: "ChanRe Lab",
     shortInfo: "A unit of ChanRe Laboratory Pvt. Ltd.",
@@ -45,7 +46,7 @@ const services = [
     moreInfo: "ChanRe Journals functions as an ideal partner for publishing all kind of research in a comprehensive and timely manner.",
     btnText: "Visit Site",
     bg: "from-sky-100 to-cyan-200",
-    link: "https://chanrejournals.com"
+    link: "https://chanrejournals.com/"
   },
   {
     title: "ChanRe Publishers",
@@ -75,14 +76,15 @@ const services = [
     link: "https://chanrebookshop.com"
   },
   {
-    title: "ChanRe Ebook",
-    shortInfo: "A unit of ChanRe Healthcare Pvt. Ltd.",
-    shortInfo1: "We help independently published content solutions and integrated media campaigns through our channel.",
-    moreInfo: "We help independently published content solutions and integrated media campaigns through our channel.",
+    title: "IARET",
+    shortInfo: "A unit of Immunology and Arthritis and Research Pvt. Ltd.",
+    shortInfo1: "Immunology & Arthritis Research & Education Trust-Help today because tomorrow you may be the one who needs helping! Forget what you can get and see what you can give.",
+    moreInfo: "Immunology & Arthritis Research & Education Trust-Help today because tomorrow you may be the one who needs helping! Forget what you can get and see what you can give.",
     btnText: "Visit Site",
-    bg: "from-red-100 to-rose-200",
-    link: "https://chanreebook.com"
-  }
+    bg: "from-yellow-100 to-orange-200",
+    link: "https://www.iaret.org/"
+  },
+ 
 ];
 
 function OurUnits() {

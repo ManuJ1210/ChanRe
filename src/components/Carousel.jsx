@@ -2,6 +2,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+
 const HeroSection = () => {
   return (
     <section className="w-full py-20 px-6 md:px-24 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
@@ -63,12 +64,12 @@ const HeroSection = () => {
           >
             Explore Our Units
           </motion.button></Link>
-          <motion.button
+          <Link to="/appointment"><motion.button
             whileHover={{ scale: 1.05 }}
             className="px-6 py-3 border border-blue-600 text-blue-600 rounded-xl hover:bg-blue-100 transition"
           >
             Book Appointment
-          </motion.button>
+          </motion.button></Link>
         </motion.div>
       </motion.div>
 

@@ -4,6 +4,7 @@ import About from "../pages/About";
 import ContactPage from "../pages/contact";
 import OurUnits from "../pages/Ourunits";
 import { AnimatePresence } from 'framer-motion';
+import AppointmentPage from "../pages/Appointment";
 
 
 
@@ -17,6 +18,8 @@ export default function AppRoutes() {
       <Route path="/about" element={<About />} />
       <Route path="/our-units" element={<OurUnits />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/appointment" element={<AppointmentPage />} />
+  
   
     </Routes>
     </AnimatePresence>
