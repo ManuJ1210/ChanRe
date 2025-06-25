@@ -26,7 +26,7 @@ const services = [
     shortInfo1: "Our comprehensive weight loss management program combines physiotherapy, personalized diet plans, and guided yoga sessions to help you achieve sustainable results.",
     moreInfo: "Our comprehensive weight loss management program combines physiotherapy, personalized diet plans, and guided yoga sessions to help you achieve sustainable results.",
     btnText: "Visit Site",
-    bg: "from-red-100 to-rose-200",
+    bg: "from-yellow-100 to-orange-200 ",
     link: "https://chanrecare.com/"
   },
   
@@ -81,7 +81,7 @@ const services = [
     shortInfo1: "Immunology & Arthritis Research & Education Trust-Help today because tomorrow you may be the one who needs helping! Forget what you can get and see what you can give.",
     moreInfo: "Immunology & Arthritis Research & Education Trust-Help today because tomorrow you may be the one who needs helping! Forget what you can get and see what you can give.",
     btnText: "Visit Site",
-    bg: "from-yellow-100 to-orange-200",
+    bg: "from-red-100 to-rose-200",
     link: "https://www.iaret.org/"
   },
  
