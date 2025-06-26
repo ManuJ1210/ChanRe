@@ -2,8 +2,4 @@
 @plugin "daisyui";
 @tailwind utilities;
 
-body {
-  position: relative;
-  z-index: 1;
-  overflow-x: hidden;
-}
+
