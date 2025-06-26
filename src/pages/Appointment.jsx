@@ -122,7 +122,7 @@ const AppointmentPage = () => {
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="flex items-center border border-gray-300 rounded px-3">
                                         <FaCalendarAlt className="text-gray-500 mr-2" />
-                                        <input type="date" className="w-full p-2 outline-none bg-transparent" />
+                                        <input type="datetime-local" className="w-full p-2 outline-none bg-transparent" />
                                     </div>
                                     <div className="flex items-center border border-gray-300 rounded px-3">
                                         <FaStethoscope className="text-gray-500 mr-2" />

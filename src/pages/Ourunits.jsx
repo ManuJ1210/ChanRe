@@ -7,7 +7,8 @@ const services = [
     shortInfo: "A unit of ChanRe Rheumatology and Immunology Center and Research",
     shortInfo1: "ChanRe Rheumatology & Immunology Center & Research is a unique one of its kind hospital in India dedicated for management of patients.",
     moreInfo: "ChanRe Rheumatology & Immunology Center & Research is a unique one of its kind hospital in India dedicated for management of patients.",
-    btnText: "Visit Site",
+    btnText1: "Visit Site",
+    btnText2: "Learn More",
     bg: "from-lime-100 to-green-200",
     link: "https://chanrericr.com"
   },
@@ -16,7 +17,8 @@ const services = [
     shortInfo: "A unit of ChanRe Healthcare Pvt. Ltd.",
     shortInfo1: "Research-assist is your online partner providing end-to-end solutions for publishing manuscripts and scientific content.",
     moreInfo: "Research-assist is your online partner providing end-to-end solutions for publishing manuscripts and scientific content.",
-    btnText: "Visit Site",
+    btnText1: "Visit Site",
+    btnText2: "Learn More",
     bg: "from-indigo-100 to-violet-200",
     link: "https://research-assist.com"
   },
@@ -25,7 +27,8 @@ const services = [
     shortInfo: "A unit of ChanRe Healthcare Pvt. Ltd.",
     shortInfo1: "Our comprehensive weight loss management program combines physiotherapy, personalized diet plans, and guided yoga sessions to help you achieve sustainable results.",
     moreInfo: "Our comprehensive weight loss management program combines physiotherapy, personalized diet plans, and guided yoga sessions to help you achieve sustainable results.",
-    btnText: "Visit Site",
+    btnText1: "Visit Site",
+    btnText2: "Learn More",
     bg: "from-yellow-100 to-orange-200 ",
     link: "https://chanrecare.com/"
   },
@@ -35,7 +38,8 @@ const services = [
     shortInfo: "A unit of ChanRe Laboratory Pvt. Ltd.",
     shortInfo1: "A new age healthcare process reengineered for the comfort & convenience of the patients in turn adding value to the service with NABL certified labreports.",
     moreInfo: "A new age healthcare process reengineered for the comfort & convenience of the patients in turn adding value to the service with NABL certified labreports.",
-    btnText: "Visit Site",
+    btnText1: "Visit Site",
+    btnText2: "Learn More",
     bg: "from-pink-100 to-rose-200",
     link: "https://chanrelab.com"
   },
@@ -44,7 +48,8 @@ const services = [
     shortInfo: "A unit of ChanRe Healthcare Pvt. Ltd.",
     shortInfo1: "ChanRe Journals functions as an ideal partner for publishing all kind of research in a comprehensive and timely manner.",
     moreInfo: "ChanRe Journals functions as an ideal partner for publishing all kind of research in a comprehensive and timely manner.",
-    btnText: "Visit Site",
+    btnText1: "Visit Site",
+    btnText2: "Learn More",
     bg: "from-sky-100 to-cyan-200",
     link: "https://chanrejournals.com/"
   },
@@ -53,7 +58,8 @@ const services = [
     shortInfo: "A unit of ChanRe Healthcare Pvt. Ltd.",
     shortInfo1: "We help independently published content solutions and integrated media campaigns through our channel.",
     moreInfo: "We help independently published content solutions and integrated media campaigns through our channel.",
-    btnText: "Visit Site",
+    btnText1: "Visit Site",
+    btnText2: "Learn More",
     bg: "from-emerald-100 to-teal-200",
     link: "https://chanrepublisher.com/"
   },
@@ -62,7 +68,8 @@ const services = [
     shortInfo: "A unit of ChanRe Health Care Pvt. Ltd.",
     shortInfo1: "ChanReMedSoft is Web based software with lightning speed access.",
     moreInfo: "ChanReMedSoft is Web based software with lightning speed access.",
-    btnText: "Visit Site",
+    btnText1: "Visit Site",
+    btnText2: "Learn More",
     bg: "from-purple-100 to-fuchsia-200",
     link: "https://chanremedsoft.com"
   },
@@ -71,7 +78,8 @@ const services = [
     shortInfo: "A unit of ChanRe Healthcare Pvt. Ltd.",
     shortInfo1: "ChanRe Journals functions as an ideal partner for publishing all kind of research in a comprehensive and timely manner.",
     moreInfo: "ChanRe Journals functions as an ideal partner for publishing all kind of research in a comprehensive and timely manner.",
-    btnText: "Visit Site",
+    btnText1: "Visit Site",
+    btnText2: "Learn More",
     bg: "from-orange-100 to-amber-200",
     link: "https://chanrebookshop.com"
   },
@@ -80,7 +88,8 @@ const services = [
     shortInfo: "A unit of Immunology and Arthritis and Research Pvt. Ltd.",
     shortInfo1: "Immunology & Arthritis Research & Education Trust-Help today because tomorrow you may be the one who needs helping! Forget what you can get and see what you can give.",
     moreInfo: "Immunology & Arthritis Research & Education Trust-Help today because tomorrow you may be the one who needs helping! Forget what you can get and see what you can give.",
-    btnText: "Visit Site",
+    btnText1: "Visit Site",
+    btnText2: "Learn More",
     bg: "from-red-100 to-rose-200",
     link: "https://www.iaret.org/"
   },
@@ -101,7 +110,7 @@ function OurUnits() {
   }, []);
 
   return (
-    <section className="py-20 px-6 md:px-20 bg-gradient-to-br from-blue-50 to-white">
+    <section className="py-20 px-6 md:px-20 ">
       <motion.h2
         className="text-4xl font-bold text-center text-gray-800"
         initial={{ opacity: 0, y: -30 }}
@@ -145,12 +154,20 @@ function OurUnits() {
             >
               <h3 className="text-xl font-bold mb-2">{service.title}</h3>
               <p className="text-sm mb-4">{service.moreInfo}</p>
+              <div className="flex gap-4 mt-4 justify-center">
               <button
                 onClick={() => window.open(service.link, "_blank")}
                 className="bg-white text-[#2a5f64] font-semibold px-4 py-2 rounded-md hover:bg-blue-100 transition"
               >
-                {service.btnText}
+                {service.btnText1}
               </button>
+              <button
+                onClick={() => window.open(service.link, "_blank")}
+                className="bg-white text-[#2a5f64] font-semibold px-4 py-2 rounded-md hover:bg-blue-100 transition"
+              >
+                {service.btnText2}
+              </button>
+              </div>
             </motion.div>
           </motion.div>
         ))}

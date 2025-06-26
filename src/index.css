@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@tailwind utilities;
 
 body {
-  @apply bg-gradient-to-br from-blue-50 via-blue-50 to-blue-50;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
 }

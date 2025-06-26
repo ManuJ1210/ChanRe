@@ -6,95 +6,95 @@ import { FaRegClock, FaVideo, FaCalendarCheck, FaVial } from "react-icons/fa";
 import Units from "../components/units";
 
 function Homepage() {
-  
-
-
   return (
     <>
-    
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <HeroSection/>
+        <HeroSection />
       </motion.div>
-    <AboutSection />
 
-    <section className="py-16 px-6">
-   
-      <motion.h2
-        className="text-4xl font-bold text-center text-gray-900"
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        Why Choose Us
-      </motion.h2>
+      <AboutSection />
 
-      
-      <motion.p
-        className="text-center text-gray-600 mt-3 text-base max-w-2xl mx-auto"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        Celebrating over two decades of care, innovation, and trust in healthcare.
-      </motion.p>
+      {/* Why Choose Us */}
+      <section className="py-20 px-6 md:px-20 ">
+        <motion.h2
+          className="text-4xl font-extrabold text-center text-blue-900 mb-4"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          Why Choose Us
+        </motion.h2>
 
-      <div className="mt-12  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {[
-          {
-            title: "24×7 Customer Support",
-            desc: "Reach us anytime — we're here to help you.",
-            gradient: "from-blue-200 to-blue-100",
-            icon: <FaRegClock className="text-blue-600 text-3xl mb-3 mx-auto" />
-          },
-          {
-            title: "Live Video Consultations",
-            desc: "Connect with specialists from the comfort of your home.",
-            gradient: "from-yellow-200 to-yellow-100",
-            icon: <FaVideo className="text-yellow-500 text-3xl mb-3 mx-auto" />
-          },
-          {
-            title: "Appointment Booking",
-            desc: "Book your consultation slot with ease online.",
-            gradient: "from-pink-200 to-pink-100",
-            icon: <FaCalendarCheck className="text-pink-500 text-3xl mb-3 mx-auto" />
-          },
-          {
-            title: "Sample Collections",
-            desc: "We collect samples directly from your doorstep.",
-            gradient: "from-green-200 to-green-100",
-            icon: <FaVial className="text-green-500 text-3xl mb-3 mx-auto" />
-          }
-        ].map((item, i) => (
-          <motion.div
-            key={i}
-            className={`bg-gradient-to-br ${item.gradient} p-10 rounded-xl shadow-md text-center`}
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 40 }}
-            transition={{ duration: 0.4, delay: i * 0.1 }}
-            viewport={{ once: true }}
-            whileHover={{ scale: 1.05 }}
-          >
-            {item.icon}
-            <div className="text-lg font-semibold text-gray-800 mb-2">{item.title}</div>
-            <p className="text-sm text-gray-700">{item.desc}</p>
-          </motion.div>
-        ))}
-      </div>
-    </section>
+        <motion.p
+          className="text-center text-lg text-gray-700 mb-12 max-w-3xl mx-auto"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          Celebrating two-decade legacy of care, innovation & respect in healthcare.
+        </motion.p>
 
-    <Units />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          {[
+            {
+              title: "24×7 Customer Support",
+              desc: "Experience expert care anytime, anywhere.",
+              gradient: "from-blue-100 to-blue-50",
+              icon: <FaRegClock />,
+              iconColor: "text-blue-600",
+            },
+            {
+              title: "Live Video Consultations",
+              desc: "Connect instantly with specialists.",
+              gradient: "from-yellow-100 to-yellow-50",
+              icon: <FaVideo />,
+              iconColor: "text-yellow-500",
+            },
+            {
+              title: "Appointment Booking",
+              desc: "Book appointments easily online.",
+              gradient: "from-pink-100 to-pink-50",
+              icon: <FaCalendarCheck />,
+              iconColor: "text-pink-500",
+            },
+            {
+              title: "Sample Collections",
+              desc: "We collect samples at your doorstep.",
+              gradient: "from-green-100 to-green-50",
+              icon: <FaVial />,
+              iconColor: "text-green-500",
+            },
+          ].map((item, i) => (
+            <motion.div
+              key={i}
+              className={`bg-gradient-to-br ${item.gradient} rounded-3xl p-6 md:p-8 shadow-md border border-blue-100 text-center transition hover:shadow-xl`}
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 40 }}
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <div className={`text-3xl mb-4 ${item.iconColor}`}>
+                <div className="bg-white p-4 rounded-full shadow-md inline-flex">
+                  {item.icon}
+                </div>
+              </div>
+              <h3 className="text-lg font-semibold text-blue-900 mb-2">{item.title}</h3>
+              <p className="text-sm text-gray-700">{item.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
 
-
+      {/* Units & Highlights */}
+      <Units />
       <GroupHighlights />
-
-   
-     
     </>
   );
 }

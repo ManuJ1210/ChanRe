@@ -9,7 +9,9 @@ import {
   FaBook,
   FaFileAlt,
   FaGlobe,
+  FaArrowRight,
 } from "react-icons/fa";
+import '../App.css';
 
 const units = [
   { icon: <FaHospitalSymbol className="text-red-500" />, name: "ChanRe RICR" },
@@ -25,9 +27,9 @@ const units = [
 
 const Units = () => {
   return (
-    <section className="w-full mt-5">
+    <section className="w-full mt-10 px-6 md:px-20 ">
       <motion.h2
-        className="text-4xl font-bold text-center text-gray-800"
+        className="text-4xl font-extrabold text-center text-blue-800"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -37,7 +39,7 @@ const Units = () => {
       </motion.h2>
 
       <motion.p
-        className="text-center text-gray-600 mt-4 max-w-xl mx-auto text-base sm:text-lg"
+        className="text-center text-gray-700 mt-4 max-w-xl mx-auto text-base sm:text-lg"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
@@ -46,27 +48,29 @@ const Units = () => {
         Explore our group units that deliver innovation, care, and research across diverse platforms.
       </motion.p>
 
-      <div className="w-full mt-12 px-6 md:px-12 lg:px-20 rounded-2xl">
-        <div className="bg-white border border-gray-300 p-6 rounded-lg ">
-        <ul className="grid grid-cols-1 p-8 rounded-2xl sm:grid-cols-2 md:grid-cols-3  gap-6 bg-white">
+      <div className="w-full mt-14">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {units.map((unit, index) => (
             <motion.li
               key={index}
-              className="flex items-center gap-4 bg-white shadow-sm hover:shadow-md transition rounded-xl px-4 py-3"
+              className="flex items-center justify-between gap-4border border-gray-200 rounded-xl px-5 py-4 shadow hover:shadow-md transition"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.03 }}
+              whileHover={{ scale: 1.02 }}
             >
-              <div className="text-2xl">{unit.icon}</div>
-              <span className="text-gray-800 font-medium text-lg">{unit.name}</span>
+              <div className="flex items-center gap-4">
+                <div className="text-2xl">{unit.icon}</div>
+                <span className="text-gray-800 font-medium text-lg">{unit.name}</span>
+              </div>
+              <FaArrowRight className="text-gray-400 bounce-right" />
             </motion.li>
           ))}
         </ul>
 
         <motion.div
-          className="text-center mt-10"
+          className="text-center mt-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -75,14 +79,12 @@ const Units = () => {
           <motion.div whileHover={{ scale: 1.05 }}>
             <Link
               to="/our-units"
-              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
             >
               Explore Our Units
             </Link>
-            
           </motion.div>
         </motion.div>
-        </div>
       </div>
     </section>
   );
