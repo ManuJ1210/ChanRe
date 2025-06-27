@@ -16,7 +16,7 @@ const HeroSection = () => {
           viewport={{ once: true }}
         >
           <h1 className="text-6xl font-extrabold text-gray-700 leading-tight mb-4 drop-shadow-sm">
-            Healthcare built to{" "}
+            Healthcare built to <br />{" "}
             <span className="text-blue-600">
               <Typewriter
                 words={["Serve", "Care", "Innovate", "Heal"]}
