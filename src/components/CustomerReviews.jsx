@@ -6,65 +6,87 @@ const testimonials = [
     name: "DB",
     date: "January 28th, 2025",
     feedback:
-      "We paid top dollar for a domain we had been waiting to obtain for a while, Atom made the payment and transfer painless and swift. Even with the delay of waiting over the weekend for our funds to transfer. Tech support is pretty swift to answer any emails as well. Accepting the final transfer was a b ...",
+      "We paid top dollar for a domain we had been waiting to obtain for a while, Atom made the payment and transfer painless and swift...",
   },
   {
-    name: "customer",
+    name: "Customer",
     date: "May 13th, 2025",
     feedback:
-      "Friendly and professional. Support always quickly responded when I had a question. The company did a fantastic job handling a sale and listened to me when I had feedback. I trust doing business with Atom.",
+      "Friendly and professional. Support always quickly responded when I had a question. The company did a fantastic job handling a sale...",
   },
   {
-    name: "oluwaseun ebhohon",
+    name: "Oluwaseun Ebhohon",
     date: "May 7th, 2025",
     feedback:
-      "Very reliable platform as always. Atom keeps blowing my mind away. Sold a name and the transaction went very smoothly. I got paid in less than 30 minutes of payout request",
+      "Very reliable platform as always. Atom keeps blowing my mind away. Sold a name and the transaction went very smoothly...",
   },
   {
-    name: "new user",
+    name: "New User",
     date: "May 1st, 2025",
     feedback:
       "Excellent experience. Seamless platform and trustworthy. I’ll definitely use Atom again in the future.",
   },
+  {
+    name: "Ravi Kumar",
+    date: "April 24th, 2025",
+    feedback:
+      "Smooth transaction and excellent communication throughout the process.",
+  },
+  {
+    name: "Ananya Sharma",
+    date: "April 10th, 2025",
+    feedback:
+      "Fast service, transparent and reliable platform. Definitely recommend.",
+  },
 ];
 
 const TestimonialCard = ({ feedback, name, date }) => (
-  <div className="border p-6 rounded-md bg-white shadow-md w-[300px] flex-shrink-0">
-    <div className="flex items-center gap-1 mb-4 text-yellow-500">
-      {Array(5)
-        .fill()
-        .map((_, i) => (
+  <div className="border p-6 rounded-md bg-white shadow-md w-full h-full flex flex-col justify-between">
+    <div>
+      <div className="flex items-center gap-1 mb-4 text-yellow-500">
+        {[...Array(5)].map((_, i) => (
           <FaStar key={i} />
         ))}
+      </div>
+      <p className="text-gray-800 text-sm mb-6 line-clamp-6">{feedback}</p>
     </div>
-    <p className="text-gray-800 text-sm mb-6 line-clamp-6">{feedback}</p>
-    <p className="font-semibold text-sm text-gray-900">{name}</p>
-    <p className="text-sm text-gray-500 mt-1">{date}</p>
+    <div>
+      <p className="font-semibold text-sm text-gray-900">{name}</p>
+      <p className="text-sm text-gray-500 mt-1">{date}</p>
+    </div>
   </div>
 );
 
 const TestimonialSection = () => {
-  const [index, setIndex] = useState(0);
-  const perPage = 3;
+  const [startIndex, setStartIndex] = useState(0);
+  const perPage = 4;
 
-  const next = () => setIndex((prev) => (prev + perPage) % testimonials.length);
-  const prev = () => setIndex((prev) => (prev - perPage + testimonials.length) % testimonials.length);
+  const next = () =>
+    setStartIndex((prev) => (prev + perPage) % testimonials.length);
+  const prev = () =>
+    setStartIndex(
+      (prev) => (prev - perPage + testimonials.length) % testimonials.length
+    );
 
-  const visible = Array.from({ length: perPage }, (_, i) => testimonials[(index + i) % testimonials.length]);
+  const visibleTestimonials = testimonials
+    .slice(startIndex, startIndex + perPage)
+    .concat(
+      testimonials.slice(0, Math.max(0, startIndex + perPage - testimonials.length))
+    );
 
   return (
     <section className="max-w-7xl mx-auto px-6 py-12 mt-10 mb-8">
-      <h2 className="text-4xl font-extrabold text-center text-blue-800">What Our Customers Say</h2>
+      <h2 className="text-4xl font-extrabold text-center text-blue-800">
+        What Our Customers Say
+      </h2>
       <p className="text-center text-gray-700 mt-4 max-w-xl mx-auto text-base sm:text-lg">
         Hear from our satisfied customers about their experiences with our services.
       </p>
 
-      <div className="mt-10 overflow-x-auto">
-        <div className="flex gap-6 w-full min-w-[768px] md:min-w-full">
-          {visible.map((t, i) => (
-            <TestimonialCard key={i} {...t} />
-          ))}
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+        {visibleTestimonials.map((t, i) => (
+          <TestimonialCard key={i} {...t} />
+        ))}
       </div>
 
       <div className="flex justify-end mt-6 pr-2 gap-2">
