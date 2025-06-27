@@ -29,7 +29,7 @@ const testimonials = [
 ];
 
 const TestimonialCard = ({ feedback, name, date }) => (
-  <div className="border p-6 rounded-md w-full md:w-1/3 flex-shrink-0 bg-white">
+  <div className="border p-6 rounded-md bg-white shadow-md w-[300px] flex-shrink-0">
     <div className="flex items-center gap-1 mb-4 text-yellow-500">
       {Array(5)
         .fill()
@@ -53,14 +53,18 @@ const TestimonialSection = () => {
   const visible = Array.from({ length: perPage }, (_, i) => testimonials[(index + i) % testimonials.length]);
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-12 mt-10 ">
-      <h2 className=" text-4xl font-extrabold text-center mt-8 text-blue-800 ">What Our Customers Say</h2>
-        <p className="text-center text-gray-700 mt-4 max-w-xl mx-auto text-base sm:text-lg">Hear from our satisfied customers about their experiences with our services.</p>
+    <section className="max-w-7xl mx-auto px-6 py-12 mt-10 mb-8">
+      <h2 className="text-4xl font-extrabold text-center text-blue-800">What Our Customers Say</h2>
+      <p className="text-center text-gray-700 mt-4 max-w-xl mx-auto text-base sm:text-lg">
+        Hear from our satisfied customers about their experiences with our services.
+      </p>
 
-      <div className="flex flex-col md:flex-row gap-6 mx-auto h-80 mt-10 ">
-        {visible.map((t, i) => (
-          <TestimonialCard key={i} {...t} />
-        ))}
+      <div className="mt-10 overflow-x-auto">
+        <div className="flex gap-6 w-full min-w-[768px] md:min-w-full">
+          {visible.map((t, i) => (
+            <TestimonialCard key={i} {...t} />
+          ))}
+        </div>
       </div>
 
       <div className="flex justify-end mt-6 pr-2 gap-2">
@@ -77,8 +81,6 @@ const TestimonialSection = () => {
           <FaChevronRight />
         </button>
       </div>
-
-      
     </section>
   );
 };

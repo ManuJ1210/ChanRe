@@ -38,12 +38,12 @@ const BackgroundAnimation = () => {
   const boxBaseStyle = {
     position: "absolute",
     display: "block",
-    backgroundColor: "rgb(0, 65, 255)", // soft gray
+    backgroundColor: "rgb(0, 15, 200)", 
     bottom: "-150px",
     animationName: "floatBox",
     animationIterationCount: "infinite",
     animationTimingFunction: "linear",
-    borderRadius: "50%", // <<< circle!
+    borderRadius: "50%", 
   };
 
   return (
