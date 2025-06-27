@@ -10,7 +10,8 @@ const services = [
     btnText1: "Visit Site",
     btnText2: "Learn More",
     bg: "from-lime-100 to-green-200",
-    link: "https://chanrericr.com"
+    link: "https://chanrericr.com",
+    link2: "/chanre-ricr"
   },
   {
     title: "Research Assist",
@@ -20,7 +21,8 @@ const services = [
     btnText1: "Visit Site",
     btnText2: "Learn More",
     bg: "from-indigo-100 to-violet-200",
-    link: "https://research-assist.com"
+    link: "https://research-assist.com",
+    link2: "/research-assist"
   },
    {
     title: "ChanRe Care",
@@ -162,7 +164,7 @@ function OurUnits() {
                 {service.btnText1}
               </button>
               <button
-                onClick={() => window.open(service.link, "_blank")}
+                onClick={() => window.open(service.link2, "_blank")}
                 className="bg-white text-[#2a5f64] font-semibold px-4 py-2 rounded-md hover:bg-blue-100 transition"
               >
                 {service.btnText2}

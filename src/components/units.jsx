@@ -8,20 +8,20 @@ import {
   FaLaptopMedical,
   FaBook,
   FaFileAlt,
-  FaGlobe,
+  FaStethoscope,
   FaArrowRight,
 } from "react-icons/fa";
 import '../App.css';
 
 const units = [
-  { icon: <FaHospitalSymbol className="text-red-500" />, name: "ChanRe RICR" },
-  { icon: <FaMicroscope className="text-purple-500" />, name: "Research Assist" },
-  { icon: <FaBookMedical className="text-blue-500" />, name: "IARET" },
-  { icon: <FaFlask className="text-green-500" />, name: "ChanRe Lab" },
-  { icon: <FaFileAlt className="text-yellow-500" />, name: "ChanRe Journals" },
-  { icon: <FaBook className="text-pink-500" />, name: "ChanRe Publishers" },
+  { icon: <FaHospitalSymbol className="text-red-500" />, name: "ChanRe RICR", Link:"/chanre-ricr"},
+  { icon: <FaMicroscope className="text-purple-500" />, name: "Research Assist", Link:"/research-assist" },
+  { icon: <FaBookMedical className="text-blue-500" />, name: "IARET", Link:"/iaret" },
+  { icon: <FaFlask className="text-green-500" />, name: "ChanRe Lab", Link:"/chanre-lab" },
+  { icon: <FaFileAlt className="text-yellow-500" />, name: "ChanRe Journals", Link:"/chanre-journals" },
+  { icon: <FaBook className="text-pink-500" />, name: "ChanRe Publishers", Link:"/chanre-publishers" },
   { icon: <FaLaptopMedical className="text-indigo-500" />, name: "ChanRe Med Soft" },
-  { icon: <FaGlobe className="text-teal-500" />, name: "ChanRe Ebook" },
+ { icon: <FaStethoscope className="text-teal-500" />, name: "ChanRe Care" },
   { icon: <FaBook className="text-orange-500" />, name: "ChanRe Bookshop" },
 ];
 
@@ -64,7 +64,7 @@ const Units = () => {
                 <div className="text-2xl">{unit.icon}</div>
                 <span className="text-gray-800 font-medium text-lg">{unit.name}</span>
               </div>
-              <FaArrowRight className="text-gray-400 bounce-right" />
+              <span><Link to={unit.Link}><FaArrowRight className="text-gray-400 bounce-right" /></Link></span>
             </motion.li>
           ))}
         </ul>

@@ -83,7 +83,7 @@ const TestimonialSection = () => {
         Hear from our satisfied customers about their experiences with our services.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 ">
         {visibleTestimonials.map((t, i) => (
           <TestimonialCard key={i} {...t} />
         ))}

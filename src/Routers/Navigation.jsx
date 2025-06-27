@@ -5,6 +5,9 @@ import ContactPage from "../pages/contact";
 import OurUnits from "../pages/Ourunits";
 import { AnimatePresence } from 'framer-motion';
 import AppointmentPage from "../pages/Appointment";
+import ChanReRICR from "../AboutUnits/ChanReRICR";
+import ResearchAssist from "../AboutUnits/ResearchAssist";
+
 
 
 
@@ -19,8 +22,9 @@ export default function AppRoutes() {
       <Route path="/our-units" element={<OurUnits />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/appointment" element={<AppointmentPage />} />
-  
-  
+      <Route path="/chanre-ricr" element={<ChanReRICR />} />
+      <Route path="/research-assist" element={<ResearchAssist />} />
+
     </Routes>
     </AnimatePresence>
   );
