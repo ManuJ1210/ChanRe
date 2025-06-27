@@ -38,7 +38,7 @@ const BackgroundAnimation = () => {
   const boxBaseStyle = {
     position: "absolute",
     display: "block",
-    backgroundColor: "rgb(0, 15, 200)", 
+    backgroundColor: "rgba(128, 128, 128, 1.5)", 
     bottom: "-150px",
     animationName: "floatBox",
     animationIterationCount: "infinite",
