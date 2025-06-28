@@ -7,6 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 import AppointmentPage from "../pages/Appointment";
 import ChanReRICR from "../AboutUnits/ChanReRICR";
 import ResearchAssist from "../AboutUnits/ResearchAssist";
+import ChanReMedSoft from "../AboutUnits/ChanReMedSoft";
 
 
 
@@ -24,6 +25,8 @@ export default function AppRoutes() {
       <Route path="/appointment" element={<AppointmentPage />} />
       <Route path="/chanre-ricr" element={<ChanReRICR />} />
       <Route path="/research-assist" element={<ResearchAssist />} />
+      <Route path="/chanre-medsoft" element={<ChanReMedSoft />} />
+
 
     </Routes>
     </AnimatePresence>

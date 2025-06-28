@@ -20,9 +20,9 @@ const units = [
   { icon: <FaFlask className="text-green-500" />, name: "ChanRe Lab", Link:"/chanre-lab" },
   { icon: <FaFileAlt className="text-yellow-500" />, name: "ChanRe Journals", Link:"/chanre-journals" },
   { icon: <FaBook className="text-pink-500" />, name: "ChanRe Publishers", Link:"/chanre-publishers" },
-  { icon: <FaLaptopMedical className="text-indigo-500" />, name: "ChanRe Med Soft" },
- { icon: <FaStethoscope className="text-teal-500" />, name: "ChanRe Care" },
-  { icon: <FaBook className="text-orange-500" />, name: "ChanRe Bookshop" },
+  { icon: <FaLaptopMedical className="text-indigo-500" />, name: "ChanRe Med Soft", Link:"/chanre-medsoft" },
+ { icon: <FaStethoscope className="text-teal-500" />, name: "ChanRe Care", Link:"/chanre-care" },
+  { icon: <FaBook className="text-orange-500" />, name: "ChanRe Bookshop", Link:"/chanre-bookshop" },
 ];
 
 const Units = () => {

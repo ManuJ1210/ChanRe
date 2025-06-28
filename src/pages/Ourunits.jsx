@@ -73,7 +73,8 @@ const services = [
     btnText1: "Visit Site",
     btnText2: "Learn More",
     bg: "from-purple-100 to-fuchsia-200",
-    link: "https://chanremedsoft.com"
+    link: "https://chanremedsoft.com",
+    link2: "/chanre-medsoft"
   },
   {
     title: "ChanRe Bookshop",
