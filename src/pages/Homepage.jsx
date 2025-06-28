@@ -19,7 +19,7 @@ function Homepage() {
 
       <AboutSection />
 
-      {/* Why Choose Us */}
+      
       <section className="py-20 px-6 md:px-20 ">
         <motion.h2
           className="text-4xl font-extrabold text-center text-blue-900 mb-4"
@@ -93,7 +93,7 @@ function Homepage() {
         </div>
       </section>
 
-      {/* Units & Highlights */}
+     
       <Units />
       <TestimonialSection />
       <GroupHighlights />

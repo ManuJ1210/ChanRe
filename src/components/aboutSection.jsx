@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section className=" px-6 md:px-10  ">
       <div className=" mx-auto rounded-[32px] bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 shadow-xl p-10 md:p-16 text-white">
-        {/* Heading */}
+
         <motion.h2
           className="text-5xl font-extrabold text-center mb-6 text-white"
           initial={{ opacity: 0, y: -30 }}
@@ -16,7 +16,7 @@ const AboutSection = () => {
           About Us
         </motion.h2>
 
-        {/* Description */}
+   
         <motion.p
           className="text-center text-lg leading-relaxed max-w-3xl mx-auto text-white"
           initial={{ opacity: 0 }}
@@ -28,7 +28,7 @@ const AboutSection = () => {
           We specialize in Rheumatology, Immunology, and comprehensive Diagnostic Services across India.
         </motion.p>
 
-        {/* Features */}
+        
         <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-8">
           {[
             {

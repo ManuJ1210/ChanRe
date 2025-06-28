@@ -105,7 +105,7 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* Info Cards */}
+      
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
           {cardData.map((item, index) => (

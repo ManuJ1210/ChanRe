@@ -29,12 +29,12 @@ function Header() {
     <nav className="sticky top-0 z-50 backdrop-blur-lg bg-white border-b border-blue-100 shadow-lg">
       <div className="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
+       
           <Link to="/" onClick={closeMobileMenu} className="flex items-center gap-2">
             <img className="h-12 w-auto" src="/images/logo.png" alt="ChanRe Logo" />
           </Link>
 
-          {/* Desktop Nav */}
+        
           <div className="hidden md:flex space-x-10 items-center">
             {[
               { to: "/", label: "Home" },
@@ -56,7 +56,7 @@ function Header() {
             ))}
           </div>
 
-          {/* Mobile Toggle */}
+    
           <div className="flex items-center md:hidden">
             <button
               onClick={toggleNav}
@@ -77,7 +77,7 @@ function Header() {
         </div>
       </div>
 
-      {/* Mobile Nav */}
+      
       {navOpen && (
         <div className="md:hidden bg-white/80 backdrop-blur-md shadow-md border-t border-blue-100 px-6 py-4 space-y-2 rounded-b-xl">
           {[
