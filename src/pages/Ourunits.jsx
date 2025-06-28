@@ -9,7 +9,7 @@ const services = [
     moreInfo: "ChanRe Rheumatology & Immunology Center & Research is a unique one of its kind hospital in India dedicated for management of patients.",
     btnText1: "Visit Site",
     btnText2: "Learn More",
-    bg: "from-lime-100 to-green-200",
+    bg: "from-lime-200 to-green-300",
     link: "https://chanrericr.com",
     link2: "/chanre-ricr"
   },
@@ -20,7 +20,7 @@ const services = [
     moreInfo: "Research-assist is your online partner providing end-to-end solutions for publishing manuscripts and scientific content.",
     btnText1: "Visit Site",
     btnText2: "Learn More",
-    bg: "from-indigo-100 to-violet-200",
+    bg: "from-indigo-200 to-violet-300",
     link: "https://research-assist.com",
     link2: "/research-assist"
   },
@@ -31,7 +31,7 @@ const services = [
     moreInfo: "Our comprehensive weight loss management program combines physiotherapy, personalized diet plans, and guided yoga sessions to help you achieve sustainable results.",
     btnText1: "Visit Site",
     btnText2: "Learn More",
-    bg: "from-yellow-100 to-orange-200 ",
+    bg: "from-yellow-200 to-orange-300 ",
     link: "https://chanrecare.com/"
   },
   
@@ -42,7 +42,7 @@ const services = [
     moreInfo: "A new age healthcare process reengineered for the comfort & convenience of the patients in turn adding value to the service with NABL certified labreports.",
     btnText1: "Visit Site",
     btnText2: "Learn More",
-    bg: "from-pink-100 to-rose-200",
+    bg: "from-pink-200 to-rose-300",
     link: "https://chanrelab.com"
   },
   {
@@ -52,7 +52,7 @@ const services = [
     moreInfo: "ChanRe Journals functions as an ideal partner for publishing all kind of research in a comprehensive and timely manner.",
     btnText1: "Visit Site",
     btnText2: "Learn More",
-    bg: "from-sky-100 to-cyan-200",
+    bg: "from-sky-200 to-cyan-300",
     link: "https://chanrejournals.com/"
   },
   {
@@ -62,7 +62,7 @@ const services = [
     moreInfo: "We help independently published content solutions and integrated media campaigns through our channel.",
     btnText1: "Visit Site",
     btnText2: "Learn More",
-    bg: "from-emerald-100 to-teal-200",
+    bg: "from-emerald-200 to-teal-300",
     link: "https://chanrepublisher.com/"
   },
   {
@@ -72,7 +72,7 @@ const services = [
     moreInfo: "ChanReMedSoft is Web based software with lightning speed access.",
     btnText1: "Visit Site",
     btnText2: "Learn More",
-    bg: "from-purple-100 to-fuchsia-200",
+    bg: "from-purple-200 to-fuchsia-300",
     link: "https://chanremedsoft.com",
     link2: "/chanre-medsoft"
   },
@@ -83,7 +83,7 @@ const services = [
     moreInfo: "ChanRe Journals functions as an ideal partner for publishing all kind of research in a comprehensive and timely manner.",
     btnText1: "Visit Site",
     btnText2: "Learn More",
-    bg: "from-orange-100 to-amber-200",
+    bg: "from-orange-200 to-amber-300",
     link: "https://chanrebookshop.com"
   },
   {
@@ -93,7 +93,7 @@ const services = [
     moreInfo: "Immunology & Arthritis Research & Education Trust-Help today because tomorrow you may be the one who needs helping! Forget what you can get and see what you can give.",
     btnText1: "Visit Site",
     btnText2: "Learn More",
-    bg: "from-red-100 to-rose-200",
+    bg: "from-red-200 to-rose-300",
     link: "https://www.iaret.org/"
   },
  

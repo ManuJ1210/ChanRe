@@ -48,10 +48,11 @@ const Units = () => {
         Explore our group units that deliver innovation, care, and research across diverse platforms.
       </motion.p>
 
+      
       <div className="w-full mt-14">
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {units.map((unit, index) => (
-            <motion.li
+            <Link to={unit.Link}><motion.li
               key={index}
               className="flex items-center justify-between gap-4 border bg-white border-gray-200 rounded-xl px-5 py-4 ease-in-out shadow hover:shadow-md transition"
               initial={{ opacity: 0, y: 30 }}
@@ -65,7 +66,7 @@ const Units = () => {
                 <span className="text-gray-800 font-medium text-lg">{unit.name}</span>
               </div>
               <span><Link to={unit.Link}><FaArrowRight className="text-gray-400 bounce-right" /></Link></span>
-            </motion.li>
+            </motion.li></Link>
           ))}
         </ul>
 
@@ -85,6 +86,7 @@ const Units = () => {
             </Link>
           </motion.div>
         </motion.div>
+      
       </div>
     </section>
   );
