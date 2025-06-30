@@ -15,7 +15,7 @@ const GroupHighlights = () => {
   return (
     <section
       ref={ref}
-      className="mx-auto rounded-[32px] mt-20 px-6 mb-20 bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 shadow-xl p-20 md:p-16 text-white"
+      className="mx-auto rounded-[32px] mb-10 mt-20 px-6  backdrop-blur-sm bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 shadow-xl p-20 md:p-16 text-white"
     >
       <motion.div
         className="text-center mb-14"

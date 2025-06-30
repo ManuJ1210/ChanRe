@@ -3,7 +3,7 @@ const ChanReRICR = () => {
   return (
 
     <>
-    <section className="min-h-screen px-6 py-20 md:px-20">
+    <section className="min-h-screen px-6 py-20 md:px-20 backdrop-blur-sm">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold text-blue-800 text-center mb-6">About ChanRe RICR</h1>
 

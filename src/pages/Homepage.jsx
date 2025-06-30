@@ -9,6 +9,7 @@ import TestimonialSection from "../components/CustomerReviews";
 function Homepage() {
   return (
     <>
+    <section className="  backdrop-blur-sm">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -97,6 +98,9 @@ function Homepage() {
       <Units />
       <TestimonialSection />
       <GroupHighlights />
+        
+      </section>
+    
     </>
   );
 }

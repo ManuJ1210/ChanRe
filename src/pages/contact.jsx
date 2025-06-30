@@ -1,5 +1,6 @@
 import { FaRegHospital, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { section } from "motion/react-client";
 
 const ContactPage = () => {
   const cardData = [
@@ -27,12 +28,29 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className=" text-gray-800">
-     <h1 className="text-5xl font-bold text-center mt-8">Contact Us</h1>
-     <p className="text-center text-gray-600 mt-4">We'd love to hear from you!</p>
 
-      <section className="py-20 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
+    <> 
+      <section className="py-20 px-6 backdrop-blur-sm">
+         <motion.h2
+        className="text-4xl font-bold text-center text-gray-800"
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        Our Websites
+      </motion.h2>
+
+      <motion.p
+        className="text-center text-gray-600 mt-4 max-w-xl mx-auto text-base sm:text-lg"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        Explore our group units that deliver innovation, care, and research across diverse platforms.
+      </motion.p>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start mt-12">
 
           <div className="backdrop-blur-xl bg-gradient-to-br from-blue-300 to-blue-200 rounded-3xl shadow-lg p-10 border border-blue-100">
             <motion.h2
@@ -106,7 +124,7 @@ const ContactPage = () => {
       </section>
 
       
-      <section className="py-16 px-6">
+      <section className="py-16 px-6 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
           {cardData.map((item, index) => (
             <motion.div
@@ -127,8 +145,10 @@ const ContactPage = () => {
             </motion.div>
           ))}
         </div>
+   
       </section>
-    </div>
+    </>
+   
   );
 };
 

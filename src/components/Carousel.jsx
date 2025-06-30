@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full py-28 px-6 md:px-20 overflow-hidden  mb-25">
+    <section className="relative w-full py-28 px-6 md:px-20 overflow-hidden backdrop-blur-sm  mb-25">
 
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-14">
         
@@ -85,11 +85,13 @@ const HeroSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
+          
         >
-          <img
+          <motion.img
             src="images/banner.png"
             alt="ChanRe Logo"
             className="w-72 md:w-96 "
+            animate={{ x: [0, 100, 0] }}
           />
         </motion.div>
       </div>

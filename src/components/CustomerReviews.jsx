@@ -41,7 +41,7 @@ const testimonials = [
 ];
 
 const TestimonialCard = ({ feedback, name, date }) => (
-  <div className="border p-6 rounded-md bg-white shadow-md w-full h-full flex flex-col justify-between">
+  <div className="border p-6 rounded-md shadow-md w-full h-full flex flex-col justify-between ">
     <div>
       <div className="flex items-center gap-1 mb-4 text-yellow-500">
         {[...Array(5)].map((_, i) => (
@@ -75,7 +75,7 @@ const TestimonialSection = () => {
     );
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-12 mt-10 mb-8">
+    <section className="max-w-7xl mx-auto px-6 py-12 mt-10 mb-8 ">
       <h2 className="text-4xl font-extrabold text-center text-blue-800">
         What Our Customers Say
       </h2>
