@@ -1,18 +1,16 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { FaHome, FaInfoCircle, FaBriefcase, FaFolder, FaEnvelope, FaBlog } from "react-icons/fa";
 
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const activeLink =
-    "text-blue-700 font-semibold border-b-2 border-blue-500 transition";
+  const activeLink = "flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-md border-b-4 border-blue-700";
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1184);
-      if (window.innerWidth >= 1184) {
-        setNavOpen(false);
-      }
+      if (window.innerWidth >= 1184) setNavOpen(false);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -20,43 +18,44 @@ function Header() {
   }, []);
 
   const toggleNav = () => setNavOpen((prev) => !prev);
-
   const closeMobileMenu = () => {
     if (isMobile) setNavOpen(false);
   };
 
+  const navItems = [
+    { to: "/", label: "Home", icon: <FaHome /> },
+    { to: "/our-units", label: "Our Units", icon: <FaBriefcase /> },
+    { to: "/contact", label: "Contact", icon: <FaEnvelope /> },
+     { to: "/about", label: "About", icon: <FaInfoCircle /> },
+
+  ];
+
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-lg bg-white border-b border-blue-100 shadow-lg">
       <div className="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-10">
-        <div className="flex justify-between items-center h-20">
-       
+        <div className="flex justify-between items-center h-20 rounded-md px-3 py-2 font-medium transition-all duration-200 ease-in-out">
           <Link to="/" onClick={closeMobileMenu} className="flex items-center gap-2">
             <img className="h-12 w-auto" src="/images/logo.png" alt="ChanRe Logo" />
           </Link>
 
-        
-          <div className="hidden md:flex space-x-10 items-center">
-            {[
-              { to: "/", label: "Home" },
-              { to: "/our-units", label: "Our Units" },
-              { to: "/about", label: "About Us" },
-              { to: "/contact", label: "Contact Us" },
-            ].map(({ to, label }) => (
+          
+          <div className="hidden md:flex space-x-6 items-center">
+            {navItems.map(({ to, label, icon }) => (
               <NavLink
                 key={to}
                 to={to}
                 className={({ isActive }) =>
                   isActive
                     ? activeLink
-                    : "text-gray-800 font-medium hover:text-blue-600 hover:drop-shadow transition duration-300"
+                    : "flex items-center gap-2 text-gray-800 font-medium px-2 py-2 hover:text-white hover:bg-blue-500 rounded transition duration-300"
                 }
               >
-                {label}
+                {icon} {label}
               </NavLink>
             ))}
           </div>
 
-    
+        
           <div className="flex items-center md:hidden">
             <button
               onClick={toggleNav}
@@ -80,19 +79,14 @@ function Header() {
       
       {navOpen && (
         <div className="md:hidden bg-white/80 backdrop-blur-md shadow-md border-t border-blue-100 px-6 py-4 space-y-2 rounded-b-xl">
-          {[
-            { to: "/", label: "Home" },
-            { to: "/our-units", label: "Our Units" },
-            { to: "/about", label: "About Us" },
-            { to: "/contact", label: "Contact Us" },
-          ].map(({ to, label }) => (
+          {navItems.map(({ to, label, icon }) => (
             <Link
               key={to}
               to={to}
               onClick={closeMobileMenu}
-              className="block text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded transition"
+              className="flex items-center gap-2 text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded transition"
             >
-              {label}
+              {icon} {label}
             </Link>
           ))}
         </div>
