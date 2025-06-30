@@ -139,7 +139,7 @@ function OurUnits() {
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className={`relative bg-gradient-to-br ${service.bg} rounded-2xl h-50 p-6 shadow-md overflow-hidden group transition`}
+            className={`relative bg-gradient-to-br ${service.bg} rounded-2xl h-auto p-6 shadow-md overflow-hidden group transition`}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.05 }}

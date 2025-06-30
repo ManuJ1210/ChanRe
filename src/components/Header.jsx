@@ -33,7 +33,7 @@ function Header() {
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-lg bg-white border-b border-blue-100 shadow-lg">
       <div className="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-10">
-        <div className="flex justify-between items-center h-20 rounded-md px-3 py-2 font-medium transition-all duration-200 ease-in-out">
+        <div className="flex justify-between items-center h-20 rounded-md px-3 py-2 font-medium ">
           <Link to="/" onClick={closeMobileMenu} className="flex items-center gap-2">
             <img className="h-12 w-auto" src="/images/logo.png" alt="ChanRe Logo" />
           </Link>
@@ -47,7 +47,7 @@ function Header() {
                 className={({ isActive }) =>
                   isActive
                     ? activeLink
-                    : "flex items-center gap-2 text-gray-800 font-medium px-2 py-2 hover:text-white hover:bg-blue-500 rounded transition duration-300"
+                    : "flex items-center gap-2 text-gray-800 font-medium px-2 py-2 hover:text-white hover:bg-blue-500 rounded transition duration-300 ease-in-out "
                 }
               >
                 {icon} {label}
