@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -76,18 +77,31 @@ const TestimonialSection = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-6 py-12 mt-10 mb-8 ">
-      <h2 className="text-4xl font-extrabold text-center text-blue-800">
+      <motion.h2 className="text-4xl font-extrabold text-center text-blue-800"
+       initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+       >
         What Our Customers Say
-      </h2>
-      <p className="text-center text-gray-700 mt-4 max-w-xl mx-auto text-base sm:text-lg">
+      </motion.h2>
+      <motion.p className="text-center text-gray-700 mt-4 max-w-xl mx-auto text-base sm:text-lg"
+       initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+        viewport={{ once: true }}>
         Hear from our satisfied customers about their experiences with our services.
-      </p>
+      </motion.p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 ">
+      <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 "
+      initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, }}
+            viewport={{ once: true }}>
         {visibleTestimonials.map((t, i) => (
           <TestimonialCard key={i} {...t} />
         ))}
-      </div>
+      </motion.div>
 
       <div className="flex justify-end mt-6 pr-2 gap-2">
         <button
