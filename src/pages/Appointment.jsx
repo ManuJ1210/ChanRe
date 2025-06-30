@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const AppointmentPage = () => {
     return (
         <>
-            <div className="min-h-screen text-black">
+            <div className="min-h-screen text-black backdrop-blur-xs ">
 
                 <section className="py-8 px-6 max-w-7xl mx-auto text-center">
                     <motion.h1 className="text-4xl font-bold"
@@ -60,9 +60,6 @@ const AppointmentPage = () => {
                             </ul>
                         </div>
                         </motion.div>
-                        
-
-
                         <motion.div className="bg-gradient-to-br from-blue-100 to-blue-50 p-4 rounded-2xl shadow-xl"
                             initial={{ opacity: 0, x: 60 }}
                             whileInView={{ opacity: 1, x: 0 }}
@@ -117,8 +114,6 @@ const AppointmentPage = () => {
                                         className="w-full p-2 outline-none bg-transparent h-24 resize-none"
                                     />
                                 </div>
-
-
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="flex items-center border border-gray-300 rounded px-3">
                                         <FaCalendarAlt className="text-gray-500 mr-2" />

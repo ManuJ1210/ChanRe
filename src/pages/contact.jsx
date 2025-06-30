@@ -34,7 +34,7 @@ const ContactPage = () => {
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
 
-          <div className="backdrop-blur-xl bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl shadow-lg p-10 border border-blue-100">
+          <div className="backdrop-blur-xl bg-gradient-to-br from-blue-300 to-blue-200 rounded-3xl shadow-lg p-10 border border-blue-100">
             <motion.h2
               className="text-4xl font-bold mb-4 text-blue-800"
               initial={{ opacity: 0, y: -30 }}

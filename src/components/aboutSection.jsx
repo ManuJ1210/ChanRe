@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <section className=" px-6 md:px-10  ">
+    <section className=" px-6 md:px-10 backdrop-blur-sm   ">
       <div className=" mx-auto rounded-[32px] bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 shadow-xl p-10 md:p-16 text-white">
 
         <motion.h2

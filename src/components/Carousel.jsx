@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full py-28 px-6 md:px-20 overflow-hidden mb-25">
+    <section className="relative w-full py-28 px-6 md:px-20 overflow-hidden  mb-25">
 
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-14">
         
