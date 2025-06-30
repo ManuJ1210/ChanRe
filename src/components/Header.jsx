@@ -5,7 +5,7 @@ import { FaHome, FaInfoCircle, FaBriefcase, FaFolder, FaEnvelope, FaBlog } from 
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const activeLink = "flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-md border-b-4 border-blue-700";
+  const activeLink = "flex items-center gap-2 bg-blue-600 text-white px-2 py-1 rounded-md border-b-4 border-blue-700 transition  duration-600 ease-in-out scale-110 ";
 
   useEffect(() => {
     const handleResize = () => {
@@ -39,7 +39,7 @@ function Header() {
           </Link>
 
           
-          <div className="hidden md:flex space-x-6 items-center">
+          <div className="hidden md:flex space-x-6 items-center text-base">
             {navItems.map(({ to, label, icon }) => (
               <NavLink
                 key={to}
@@ -47,7 +47,7 @@ function Header() {
                 className={({ isActive }) =>
                   isActive
                     ? activeLink
-                    : "flex items-center gap-2 text-gray-800 font-medium px-2 py-2 hover:text-white hover:bg-blue-500 rounded transition duration-300 ease-in-out "
+                    : "flex items-center gap-2 text-gray-800 font-medium px-2 py-2 hover:text-white hover:bg-blue-500 rounded transition duration-300 ease-in-out"
                 }
               >
                 {icon} {label}

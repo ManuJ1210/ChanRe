@@ -1,6 +1,6 @@
 import { FaRegHospital, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { section } from "motion/react-client";
+import { Helmet } from "react-helmet";
 
 const ContactPage = () => {
   const cardData = [
@@ -30,6 +30,10 @@ const ContactPage = () => {
   return (
 
     <> 
+      <Helmet>
+        <title>Contact Us</title>
+        <meta name="description" content="Get in touch with Chanre Group for any inquiries or support." />
+      </Helmet>
       <section className="py-20 px-6 backdrop-blur-sm">
          <motion.h2
         className="text-4xl font-bold text-center text-gray-800"

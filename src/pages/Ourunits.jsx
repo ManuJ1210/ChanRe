@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import {Helmet} from "react-helmet";
 
 const services = [
   {
@@ -113,7 +114,11 @@ function OurUnits() {
   }, []);
 
   return (
-    
+    <>
+    <Helmet>
+      <title>Our Units</title>
+      <meta name="description" content="Explore the various units under Chanre Group." />
+    </Helmet>
     <section className="py-20 px-6 md:px-20 backdrop-blur-sm ">
       <motion.h2
         className="text-4xl font-bold text-center text-gray-800"
@@ -122,7 +127,7 @@ function OurUnits() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        Our Websites
+        Our Units
       </motion.h2>
 
       <motion.p
@@ -177,6 +182,7 @@ function OurUnits() {
         ))}
       </div>
     </section>
+    </>
   );
 }
 

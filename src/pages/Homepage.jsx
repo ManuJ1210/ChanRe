@@ -5,11 +5,16 @@ import AboutSection from "../components/aboutSection";
 import { FaRegClock, FaVideo, FaCalendarCheck, FaVial } from "react-icons/fa";
 import Units from "../components/units";
 import TestimonialSection from "../components/CustomerReviews";
+import {Helmet} from "react-helmet";
 
 function Homepage() {
   return (
     <>
     <section className="  backdrop-blur-sm">
+      <Helmet>
+        <title>Homepage</title>
+        <meta name="description" content="Welcome to Chanre Group, your partner in healthcare innovation." />
+      </Helmet>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

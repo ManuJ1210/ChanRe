@@ -1,11 +1,14 @@
 import { FaUser, FaRegClock, FaEnvelope, FaPhoneAlt, FaRegCommentDots, FaCalendarAlt, FaStethoscope,  FaVideo, FaCalendarCheck, FaVial } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { Helmet} from "react-helmet";
 const AppointmentPage = () => {
     return (
         <>
             <div className="min-h-screen text-black backdrop-blur-xs ">
-
+                <Helmet>
+                    <title>Book Appointment</title>
+                </Helmet>
                 <section className="py-8 px-6 max-w-7xl mx-auto text-center">
                     <motion.h1 className="text-4xl font-bold"
                         initial={{ opacity: 0, y: -30 }}
