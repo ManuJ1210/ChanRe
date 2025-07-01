@@ -4,8 +4,9 @@ import HeroSection from "../components/Carousel";
 import AboutSection from "../components/aboutSection";
 import { FaRegClock, FaVideo, FaCalendarCheck, FaVial } from "react-icons/fa";
 import Units from "../components/units";
-import TestimonialSection from "../components/CustomerReviews";
+
 import {Helmet} from "react-helmet";
+import ReviewSlider from "../components/CustomerReviews";
 
 function Homepage() {
   return (
@@ -101,7 +102,7 @@ function Homepage() {
 
      
       <Units />
-      <TestimonialSection />
+      <ReviewSlider/>
       <GroupHighlights />
         
       </section>

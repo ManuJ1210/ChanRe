@@ -6,7 +6,9 @@ import AppRoutes from './Routers/Navigation';
 import BackgroundAnimation from './pages/BackgroundAnimation';
 import { useEffect } from "react";
 import Lenis from '@studio-freight/lenis';
+
 function App() {
+ 
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -25,11 +27,13 @@ function App() {
 
   return (
     <>
+   
     <Header />
     <ScrollToTop />
     <BackgroundAnimation />
     <AppRoutes />
     <Footer />
+    
     </>
 
 
