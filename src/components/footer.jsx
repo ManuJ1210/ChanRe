@@ -1,50 +1,45 @@
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <>
-    <footer className=" text-white py-16  px-6 md:px-20 bg-gray-800 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
- 
-        <div>
-          <h6 className="text-lg font-semibold text-white mb-4">Important Links</h6>
-          <ul className="space-y-2">
-            <li className="hover:text-blue-600 transition">ChanRe RICR</li>
-            <li className="hover:text-blue-600 transition">Research Assist</li>
-            <li className="hover:text-blue-600 transition">IARET</li>
-            <li className="hover:text-blue-600 transition">ChanRe Journals</li>
-              <li className="hover:text-blue-600 transition">ChanRe Publishers</li>
-          </ul>
-        </div>
-
-
-        <div>
-          <h6 className="text-lg font-semibold text-white mb-4">Company</h6>
-          <ul className="space-y-2">
-            <li className="hover:text-blue-600 transition">About Us</li>
-            <li className="hover:text-blue-600 transition">Contact</li>
-            <li className="hover:text-blue-600 transition">Careers</li>
-            <li className="hover:text-blue-600 transition">Press Kit</li>
-          </ul>
-        </div>
-
-  
-        <div>
-          <h6 className="text-lg font-semibold text-white mb-4">Follow Us</h6>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-blue-600 transition">
-              <FaFacebookF size={22} />
-            </a>
-            <a href="#" className="hover:text-sky-500 transition">
-              <FaTwitter size={22} />
-            </a>
-            <a href="#" className="hover:text-pink-500 transition">
-              <FaInstagram size={22} />
-            </a>
-          </div>
-        </div>
+   <footer className="footer sm:footer-horizontal font-semibold bg-gray-800 text-lg p-10 text-white ">
+  <aside>
+    <img src="/images/logo.png" alt="" />
+     <h6 className="footer-title mt-3">Newsletter</h6>
+    <fieldset className="w-80">
+      <label>Enter your email address</label>
+      <div className="join">
+        <input
+          type="text"
+          placeholder="username@site.com"
+          className="input input-bordered join-item focus:outline-none bg-gray-500" />
+        <button className="btn bg-blue-600 text-white border-none shadow-none join-item">Subscribe</button>
       </div>
-      </footer>
+    </fieldset>
+  </aside>
+  <nav>
+    <h6 className="footer-title">Services</h6>
+    <a className="link link-hover">ChanRe RICR</a>
+    <a className="link link-hover">Research Assist</a>
+    <a className="link link-hover">ChanRe Med Soft</a>
+    <a className="link link-hover">ChanRe Care</a>
+  </nav>
+  <nav>
+    <h6 className="footer-title">Company</h6>
+    <a className="link link-hover">About us</a>
+    <a className="link link-hover">Contact</a>
+    <a className="link link-hover">Jobs</a>
+    <a className="link link-hover">Press kit</a>
+  </nav>
+  <nav>
+    <h6 className="footer-title">Legal</h6>
+    <a className="link link-hover">Terms of use</a>
+    <a className="link link-hover">Privacy policy</a>
+    <a className="link link-hover">Cookie policy</a>
+  </nav>
+</footer>
 
     
       <div className="text-center text-md font-semibold text-white h-15 content-center bg-gray-900 ">

@@ -3,10 +3,10 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
 const highlights = [
-  { icon: "🎯", label: "Years of Service", end: 21, bg: "from-pink-200 to-pink-100" },
-  { icon: "🏥", label: "Subsidiaries", end: 9, bg: "from-blue-200 to-blue-100" },
-  { icon: "👨‍⚕️", label: "Staff & Specialists", end: 100, bg: "from-green-200 to-green-100" },
-  { icon: "🧬", label: "Patients Served", end: 10000, bg: "from-yellow-200 to-yellow-100" },
+  { icon: "🎯", label: "Years of Service", end: 21, bg: "from-pink-300 to-pink-200" },
+  { icon: "🏥", label: "Subsidiaries", end: 9, bg: "from-blue-300 to-blue-200" },
+  { icon: "👨‍⚕️", label: "Staff & Specialists", end: 100, bg: "from-green-300 to-green-200" },
+  { icon: "🧬", label: "Patients Served", end: 10000, bg: "from-yellow-300 to-yellow-200" },
 ];
 
 const GroupHighlights = () => {

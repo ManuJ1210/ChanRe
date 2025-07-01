@@ -74,15 +74,15 @@ const AppointmentPage = () => {
                             transition={{ duration: 0.6 }}
                             viewport={{ once: true }}>
                             <h3 className="text-xl font-bold text-blue-500 mb-6">It’s Quick & Easy</h3>
-                            <form className="space-y-4 text-sm">
+                            <form className="space-y-4 text-sm ">
 
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="grid grid-cols-2 gap-4  ">
                                     <div className="flex items-center border border-gray-300 rounded px-3">
                                         <FaUser className="text-gray-500 mr-2" />
                                         <input
                                             type="text"
                                             placeholder="First Name"
-                                            className="w-full p-2 outline-none bg-transparent"
+                                            className="w-full p-2 outline-none bg-transparent "
                                         />
                                     </div>
                                     <div className="flex items-center border border-gray-300 rounded px-3">
