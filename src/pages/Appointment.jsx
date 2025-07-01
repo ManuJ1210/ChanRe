@@ -1,7 +1,7 @@
-import { FaUser, FaRegClock, FaEnvelope, FaPhoneAlt, FaRegCommentDots, FaCalendarAlt, FaStethoscope,  FaVideo, FaCalendarCheck, FaVial } from "react-icons/fa";
+import { FaUser, FaRegClock, FaEnvelope, FaPhoneAlt, FaRegCommentDots, FaCalendarAlt, FaStethoscope, FaVideo, FaCalendarCheck, FaVial } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { motion } from "framer-motion";
-import { Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 const AppointmentPage = () => {
     return (
         <>
@@ -9,15 +9,19 @@ const AppointmentPage = () => {
                 <Helmet>
                     <title>Book Appointment</title>
                 </Helmet>
-                <section className="py-8 px-6 max-w-7xl mx-auto text-center">
-                    <motion.h1 className="text-4xl font-bold"
+                <section className="py-8 px-6 max-w-7xl mx-auto text-center ">
+                    <motion.h2
+                        className="text-4xl font-bold text-center text-blue-900"
                         initial={{ opacity: 0, y: -30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
                     >
-                        Book an Appointment</motion.h1>
-                    <motion.p className="mt-2 text-lg text-black"
+                        Book an Appointment
+                    </motion.h2>
+
+                    <motion.p
+                        className="text-center text-gray-600 mt-4 max-w-xl mx-auto text-base sm:text-lg"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.2, duration: 0.6 }}
@@ -25,6 +29,7 @@ const AppointmentPage = () => {
                     >
                         Schedule your consultation with ChanRe’s specialists today.
                     </motion.p>
+
                 </section>
 
 
@@ -42,7 +47,7 @@ const AppointmentPage = () => {
                                 ChanRe Group is a pioneer in Rheumatology, Immunology, and advanced diagnostics. Our experts provide compassionate, tech-enabled care. Fill in the form to book a consultation today.
                             </p>
                             <ul className="space-y-3 text-gray-700">
-                                 <li className="flex items-center gap-2">
+                                <li className="flex items-center gap-2">
                                     <FaRegClock className="text-blue-500" /> 24×7 Customer Support
                                 </li>
                                 <li className="flex items-center gap-2">
@@ -56,12 +61,12 @@ const AppointmentPage = () => {
                                 </li>
                             </ul>
                             <div className="mt-6 ">
-                            <h1 className="text-3xl font-bold">Contact Us</h1>
-                            <ul className="space-y-3 text-gray-700 mt-4">
-                                <li className="flex items-center gap-2"><FiPhoneCall className ="text-blue-500" />+91 9632533122</li>
-                                <li className="flex items-center gap-2"><FiPhoneCall className ="text-blue-500"/>+91 8042516699</li>
-                            </ul>
-                        </div>
+                                <h1 className="text-3xl font-bold">Contact Us</h1>
+                                <ul className="space-y-3 text-gray-700 mt-4">
+                                    <li className="flex items-center gap-2"><FiPhoneCall className="text-blue-500" />+91 9632533122</li>
+                                    <li className="flex items-center gap-2"><FiPhoneCall className="text-blue-500" />+91 8042516699</li>
+                                </ul>
+                            </div>
                         </motion.div>
                         <motion.div className="bg-gradient-to-br from-blue-100 to-blue-50 p-4 rounded-2xl shadow-xl"
                             initial={{ opacity: 0, x: 60 }}

@@ -130,7 +130,7 @@ function OurUnits() {
     </Helmet>
     <section className="py-20 px-6 md:px-20 backdrop-blur-sm ">
       <motion.h2
-        className="text-4xl font-bold text-center text-gray-800"
+        className="text-4xl font-bold text-center text-blue-900"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}

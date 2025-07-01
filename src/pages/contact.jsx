@@ -8,21 +8,21 @@ const ContactPage = () => {
       icon: <FaRegHospital />,
       title: "ABOUT US",
       text: "ChanRe Group is a pioneering healthcare institution established in 2002. We specialize in Rheumatology, Immunology & Diagnostics.",
-      bg: "from-blue-200 to-blue-100",
+      bg: "from-blue-300 to-blue-200",
       iconColor: "text-blue-500"
     },
     {
       icon: <FaPhoneAlt />,
       title: "PHONE",
       text: "+91 96325 33122\n+91 80425 16699",
-      bg: "from-green-200 to-green-100",
+      bg: "from-green-300 to-green-200",
       iconColor: "text-green-500"
     },
     {
       icon: <FaMapMarkerAlt />,
       title: "LOCATION",
       text: "414/65 20th Main, Chord Rd,\n1st Block, Rajajinagar, Bengaluru, Karnataka 560010\nFax: (222) 531-8999",
-      bg: "from-pink-200 to-pink-100",
+      bg: "from-pink-300 to-pink-200",
       iconColor: "text-pink-500"
     },
   ];
@@ -36,13 +36,13 @@ const ContactPage = () => {
       </Helmet>
       <section className="py-20 px-6 backdrop-blur-sm">
          <motion.h2
-        className="text-4xl font-bold text-center text-gray-800"
+        className="text-4xl font-bold text-center text-blue-900"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        Our Websites
+        Contact Us
       </motion.h2>
 
       <motion.p
@@ -52,7 +52,7 @@ const ContactPage = () => {
         transition={{ delay: 0.2, duration: 0.6 }}
         viewport={{ once: true }}
       >
-        Explore our group units that deliver innovation, care, and research across diverse platforms.
+       We're here to assist you. Drop us a message and we'll respond promptly.
       </motion.p>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start mt-12">
 
@@ -66,15 +66,6 @@ const ContactPage = () => {
             >
               Get in Touch
             </motion.h2>
-            <motion.p
-              className="text-gray-600 mb-8"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              We're here to assist you. Drop us a message and we'll respond promptly.
-            </motion.p>
 
             <motion.form
               className="grid grid-cols-1 md:grid-cols-2 gap-5"
