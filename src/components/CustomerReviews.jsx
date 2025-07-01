@@ -38,6 +38,14 @@ const reviews = [
     rating: 4,
     date: "2025-06-20",
   },
+  {
+    name: "Evan Patel",
+    feedback:
+      "Great experience overall. The onboarding was simple, and the performance is great. I faced no bugs or issues during my time using it. Worth every penny. I'd recommend it without hesitation.",
+    rating: 4,
+    date: "2025-06-20",
+  },
+  
 ];
 
 const ReviewSlider = () => {
