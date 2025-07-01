@@ -34,7 +34,7 @@ const GroupHighlights = () => {
         {highlights.map((item, index) => (
           <motion.div
             key={index}
-            className={`w-80 bg-gradient-to-br ${item.bg} rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl transition transform hover:scale-105`}
+            className={`w-80 bg-gradient-to-br ${item.bg} rounded-3xl p-8 text-center drop-shadow-green-50 hover:shadow-2xl transition transform hover:scale-105`}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}

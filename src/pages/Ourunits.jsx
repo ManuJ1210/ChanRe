@@ -12,7 +12,8 @@ const services = [
     btnText2: "Learn More",
     bg: "from-lime-200 to-green-300",
     link: "https://chanrericr.com",
-    link2: "/chanre-ricr"
+    link2: "/chanre-ricr",
+    
   },
   {
     title: "Research Assist",
@@ -23,7 +24,8 @@ const services = [
     btnText2: "Learn More",
     bg: "from-indigo-200 to-violet-300",
     link: "https://research-assist.com",
-    link2: "/research-assist"
+    link2: "/research-assist",
+    
   },
    {
     title: "ChanRe Care",
@@ -33,7 +35,8 @@ const services = [
     btnText1: "Visit Site",
     btnText2: "Learn More",
     bg: "from-yellow-200 to-orange-300 ",
-    link: "https://chanrecare.com/"
+    link: "https://chanrecare.com/",
+    
   },
   
   {
@@ -44,7 +47,8 @@ const services = [
     btnText1: "Visit Site",
     btnText2: "Learn More",
     bg: "from-pink-200 to-rose-300",
-    link: "https://chanrelab.com"
+    link: "https://chanrelab.com",
+    
   },
   {
     title: "ChanRe Journals",
@@ -54,7 +58,8 @@ const services = [
     btnText1: "Visit Site",
     btnText2: "Learn More",
     bg: "from-sky-200 to-cyan-300",
-    link: "https://chanrejournals.com/"
+    link: "https://chanrejournals.com/",
+    
   },
   {
     title: "ChanRe Publishers",
@@ -64,7 +69,8 @@ const services = [
     btnText1: "Visit Site",
     btnText2: "Learn More",
     bg: "from-emerald-200 to-teal-300",
-    link: "https://chanrepublisher.com/"
+    link: "https://chanrepublisher.com/",
+    
   },
   {
     title: "ChanRe Med Soft",
@@ -75,7 +81,8 @@ const services = [
     btnText2: "Learn More",
     bg: "from-purple-200 to-fuchsia-300",
     link: "https://chanremedsoft.com",
-    link2: "/chanre-medsoft"
+    link2: "/chanre-medsoft",
+    
   },
   {
     title: "ChanRe Bookshop",
@@ -85,7 +92,8 @@ const services = [
     btnText1: "Visit Site",
     btnText2: "Learn More",
     bg: "from-orange-200 to-amber-300",
-    link: "https://chanrebookshop.com"
+    link: "https://chanrebookshop.com",
+    
   },
   {
     title: "IARET",
@@ -95,7 +103,8 @@ const services = [
     btnText1: "Visit Site",
     btnText2: "Learn More",
     bg: "from-red-200 to-rose-300",
-    link: "https://www.iaret.org/"
+    link: "https://www.iaret.org/",
+    
   },
  
 ];
@@ -144,7 +153,7 @@ function OurUnits() {
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className={`relative bg-gradient-to-br ${service.bg} rounded-2xl h-auto p-6 shadow-md overflow-hidden group transition`}
+            className={`relative bg-gradient-to-br ${service.bg} ${service.shadow}  rounded-2xl h-auto p-6 shadow-md overflow-hidden group transition`}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.05 }}

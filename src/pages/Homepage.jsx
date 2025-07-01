@@ -56,6 +56,7 @@ function Homepage() {
               gradient: "from-blue-200 to-blue-400",
               icon: <FaRegClock />,
               iconColor: "text-blue-600",
+              shadow:"shadow-blue-500",
             },
             {
               title: "Live Video Consultations",
@@ -63,6 +64,7 @@ function Homepage() {
               gradient: "from-yellow-200 to-yellow-400",
               icon: <FaVideo />,
               iconColor: "text-yellow-500",
+               shadow:"shadow-yellow-400",
             },
             {
               title: "Appointment Booking",
@@ -70,6 +72,7 @@ function Homepage() {
               gradient: "from-pink-200 to-pink-400",
               icon: <FaCalendarCheck />,
               iconColor: "text-pink-500",
+               shadow:"shadow-pink-400",
             },
             {
               title: "Sample Collections",
@@ -77,11 +80,12 @@ function Homepage() {
               gradient: "from-green-200 to-green-400",
               icon: <FaVial />,
               iconColor: "text-green-500",
+              shadow:"shadow-green-400",
             },
           ].map((item, i) => (
             <motion.div
               key={i}
-              className={`bg-gradient-to-br ${item.gradient} rounded-3xl p-6 md:p-8 shadow-md border border-blue-100 text-center transition ease-in-out hover:shadow-xl`}
+              className={`bg-gradient-to-br ${item.gradient} rounded-3xl p-6 md:p-8  ${item.shadow} border border-blue-100 text-center transition ease-in-out hover:shadow-xl`}
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 40 }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
