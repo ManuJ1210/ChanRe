@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 const AboutSection = () => {
   return (
     <section className=" px-6 md:px-10 backdrop-blur-sm   ">
-      <div className=" mx-auto rounded-[32px] bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 shadow-xl p-10 md:p-16 text-white">
+      <div className=" mx-auto rounded-[32px] bg-[url(/images/background.jpg)] shadow-xl p-10 md:p-16 text-white">
 
         <motion.h2
-          className="text-5xl font-extrabold text-center mb-6 text-white"
+          className="text-5xl font-extrabold text-center mb-6 text-blue-900"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -18,7 +18,7 @@ const AboutSection = () => {
 
    
         <motion.p
-          className="text-center text-lg leading-relaxed max-w-3xl mx-auto text-white"
+          className="text-center text-lg leading-relaxed max-w-3xl mx-auto text-gray-700"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
@@ -54,7 +54,7 @@ const AboutSection = () => {
           ].map((item, index) => (
             <motion.div
               key={index}
-              className={`bg-white/90 rounded-2xl p-8 text-center border border-white/30 shadow-md hover:shadow-xl transition`}
+              className={`bg-gray-200 rounded-2xl p-8 text-center border border-white/30 shadow-md hover:shadow-xl transition`}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 + 0.3, duration: 0.6 }}
