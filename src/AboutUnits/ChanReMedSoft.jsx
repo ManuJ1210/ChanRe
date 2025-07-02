@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router";
 const ChanReRICR = () => {
   return (
 
@@ -69,9 +70,9 @@ const ChanReRICR = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}>
-          <button className="px-6 py-3 bg-blue-700 text-white rounded-full shadow-md hover:bg-blue-800 transition">
+          <Link to="https://chanremedsoft.com"><button className="px-6 py-3 bg-blue-700 text-white rounded-full shadow-md cursor-pointer hover:bg-blue-800 transition">
             Visit Our Main Website
-          </button>
+          </button></Link>
         </motion.div>
       </div>
     </section>
