@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const AboutSection = () => {
   return (
     <section className=" px-6 md:px-10 backdrop-blur-sm   ">
-      <div className=" mx-auto rounded-[32px] bg-[url(/images/background.jpg)] shadow-xl p-10 md:p-16 text-white">
+      <div className=" mx-auto rounded-[32px] backdrop-blur-sm bg-[url(/images/background.jpg)] shadow-xl p-10 md:p-16 text-white">
 
         <motion.h2
           className="text-5xl font-extrabold text-center mb-6 text-blue-900"
@@ -54,7 +54,7 @@ const AboutSection = () => {
           ].map((item, index) => (
             <motion.div
               key={index}
-              className={`bg-gray-200 rounded-2xl p-8 text-center border border-white/30 shadow-md hover:shadow-xl transition`}
+              className={`bg-gray-100 rounded-2xl p-8 text-center border border-white/30 shadow-md hover:shadow-xl transition`}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 + 0.3, duration: 0.6 }}
