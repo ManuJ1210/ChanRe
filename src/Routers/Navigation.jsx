@@ -1,4 +1,4 @@
-import { Routes, Route ,  useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Homepage from "../pages/Homepage";
 import About from "../pages/About";
 import ContactPage from "../pages/contact";
@@ -14,21 +14,21 @@ import ChanReMedSoft from "../AboutUnits/ChanReMedSoft";
 
 
 export default function AppRoutes() {
-   const location = useLocation();
+  const location = useLocation();
   return (
     <AnimatePresence mode="wait">
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/our-units" element={<OurUnits />} />
-      <Route path="/contact" element={<ContactPage />} />
-      <Route path="/appointment" element={<AppointmentPage />} />
-      <Route path="/chanre-ricr" element={<ChanReRICR />} />
-      <Route path="/research-assist" element={<ResearchAssist />} />
-      <Route path="/chanre-medsoft" element={<ChanReMedSoft />} />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/our-units" element={<OurUnits />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/appointment" element={<AppointmentPage />} />
+        <Route path="/chanre-ricr" element={<ChanReRICR />} />
+        <Route path="/research-assist" element={<ResearchAssist />} />
+        <Route path="/chanre-medsoft" element={<ChanReMedSoft />} />
 
 
-    </Routes>
+      </Routes>
     </AnimatePresence>
   );
 }

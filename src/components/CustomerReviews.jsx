@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -45,7 +45,7 @@ const reviews = [
     rating: 4,
     date: "2025-06-20",
   },
-  
+
 ];
 
 const ReviewSlider = () => {
@@ -66,7 +66,7 @@ const ReviewSlider = () => {
 
   return (
     <div className="w-full flex flex-col items-center py-12 px-4 ">
-      
+
       <motion.h2
         className="text-3xl md:text-4xl font-bold text-center mb-2 text-blue-800"
         initial={{ opacity: 0, y: -20 }}
@@ -85,7 +85,7 @@ const ReviewSlider = () => {
         Real feedback from clients who have experienced our product and service firsthand.
       </motion.p>
 
-      
+
       <div className="relative w-full max-w-7xl mt-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-300">
           {visibleReviews.map((review, index) => (
@@ -116,7 +116,7 @@ const ReviewSlider = () => {
           ))}
         </div>
 
-     
+
         <div className="absolute bottom-[-4.5rem] right-0 flex gap-3 p-4 ">
           <button
             onClick={prev}

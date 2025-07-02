@@ -10,7 +10,7 @@ const BackgroundAnimation = () => {
     { left: "50%", width: 25, height: 25, delay: "15s", duration: "45s" },
     { left: "20%", width: 15, height: 15, delay: "2s", duration: "35s" },
     { left: "85%", width: 150, height: 150, delay: "0s", duration: "11s" },
-    
+
   ];
 
   const containerStyle = {
@@ -39,12 +39,12 @@ const BackgroundAnimation = () => {
   const boxBaseStyle = {
     position: "absolute",
     display: "block",
-    backgroundColor: "rgba(128, 128, 128, 1.5)", 
+    backgroundColor: "rgba(128, 128, 128, 1.5)",
     bottom: "-150px",
     animationName: "floatBox",
     animationIterationCount: "infinite",
     animationTimingFunction: "linear",
-    borderRadius: "50%", 
+    borderRadius: "50%",
   };
 
   return (

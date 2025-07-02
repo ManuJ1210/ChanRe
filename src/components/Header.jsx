@@ -26,7 +26,7 @@ function Header() {
     { to: "/", label: "Home", icon: <FaHome /> },
     { to: "/our-units", label: "Our Units", icon: <FaBriefcase /> },
     { to: "/contact", label: "Contact", icon: <FaEnvelope /> },
-     { to: "/about", label: "About", icon: <FaInfoCircle /> },
+    { to: "/about", label: "About", icon: <FaInfoCircle /> },
 
   ];
 
@@ -38,7 +38,7 @@ function Header() {
             <img className="h-12 w-auto" src="/images/logo.png" alt="ChanRe Logo" />
           </Link>
 
-          
+
           <div className="hidden md:flex space-x-6 items-center text-base">
             {navItems.map(({ to, label, icon }) => (
               <NavLink
@@ -55,7 +55,7 @@ function Header() {
             ))}
           </div>
 
-        
+
           <div className="flex items-center md:hidden">
             <button
               onClick={toggleNav}
@@ -76,7 +76,7 @@ function Header() {
         </div>
       </div>
 
-      
+
       {navOpen && (
         <div className="md:hidden bg-white/80 backdrop-blur-md shadow-md border-t border-blue-100 px-6 py-4 space-y-2 rounded-b-xl">
           {navItems.map(({ to, label, icon }) => (

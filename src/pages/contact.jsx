@@ -29,31 +29,31 @@ const ContactPage = () => {
 
   return (
 
-    <> 
+    <>
       <Helmet>
         <title>Contact Us</title>
         <meta name="description" content="Get in touch with Chanre Group for any inquiries or support." />
       </Helmet>
       <section className="py-20 px-6 backdrop-blur-sm">
-         <motion.h2
-        className="text-4xl font-bold text-center text-blue-900"
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        Contact Us
-      </motion.h2>
+        <motion.h2
+          className="text-4xl font-bold text-center text-blue-900"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          Contact Us
+        </motion.h2>
 
-      <motion.p
-        className="text-center text-gray-600 mt-4 max-w-xl mx-auto text-base sm:text-lg"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-       We're here to assist you. Drop us a message and we'll respond promptly.
-      </motion.p>
+        <motion.p
+          className="text-center text-gray-600 mt-4 max-w-xl mx-auto text-base sm:text-lg"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          We're here to assist you. Drop us a message and we'll respond promptly.
+        </motion.p>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start mt-12">
 
           <div className="backdrop-blur-xl lg:h-[565px] bg-gradient-to-br from-blue-300 to-blue-200 rounded-3xl shadow-lg p-10 border border-blue-100">
@@ -98,7 +98,7 @@ const ContactPage = () => {
             </motion.form>
           </div>
 
-          
+
           <motion.div
             className="w-full rounded-3xl overflow-hidden shadow-lg border border-blue-100"
             initial={{ opacity: 0, scale: 0.95 }}
@@ -118,7 +118,7 @@ const ContactPage = () => {
         </div>
       </section>
 
-      
+
       <section className="py-16 px-6 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
           {cardData.map((item, index) => (
@@ -140,10 +140,10 @@ const ContactPage = () => {
             </motion.div>
           ))}
         </div>
-   
+
       </section>
     </>
-   
+
   );
 };
 

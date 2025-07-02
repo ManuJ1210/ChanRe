@@ -16,7 +16,7 @@ const AboutSection = () => {
           About Us
         </motion.h2>
 
-   
+
         <motion.p
           className="text-center text-lg leading-relaxed max-w-3xl mx-auto text-gray-700"
           initial={{ opacity: 0 }}
@@ -28,21 +28,21 @@ const AboutSection = () => {
           We specialize in Rheumatology, Immunology, and comprehensive Diagnostic Services across India.
         </motion.p>
 
-        
+
         <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-8">
           {[
             {
               icon: <FaUserNurse />,
               title: "Expertise",
               desc: "Experienced staff delivering compassionate care.",
-            
+
               iconColor: "text-blue-600",
             },
             {
               icon: <FaHeart />,
               title: "Compassion",
               desc: "Holistic and patient-centric approach.",
-              
+
               iconColor: "text-pink-600",
             },
             {

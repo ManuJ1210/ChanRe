@@ -5,9 +5,9 @@ import { Typewriter } from "react-simple-typewriter";
 const HeroSection = () => {
   return (
     <section className="relative w-full py-28 px-6 md:px-20 overflow-hidden backdrop-blur-sm  mb-25 ">
-      
+
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-14">
-        
+
         <motion.div
           className="md:w-1/2 text-center md:text-left"
           initial={{ opacity: 0, x: -60 }}
@@ -78,14 +78,14 @@ const HeroSection = () => {
           </motion.div>
         </motion.div>
 
-       
+
         <motion.div
           className="md:w-1/2 flex justify-center"
           initial={{ opacity: 0, x: 60 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          
+
         >
           <motion.img
             src="images/banner.png"
@@ -96,7 +96,7 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-    
+
     </section>
   );
 };

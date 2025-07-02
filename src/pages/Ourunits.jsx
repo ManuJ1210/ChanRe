@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const services = [
   {
@@ -13,7 +13,7 @@ const services = [
     bg: "from-lime-200 to-green-300",
     link: "https://chanrericr.com",
     link2: "/chanre-ricr",
-    
+
   },
   {
     title: "Research Assist",
@@ -25,9 +25,9 @@ const services = [
     bg: "from-indigo-200 to-violet-300",
     link: "https://research-assist.com",
     link2: "/research-assist",
-    
+
   },
-   {
+  {
     title: "ChanRe Care",
     shortInfo: "A unit of ChanRe Healthcare Pvt. Ltd.",
     shortInfo1: "Our comprehensive weight loss management program combines physiotherapy, personalized diet plans, and guided yoga sessions to help you achieve sustainable results.",
@@ -36,9 +36,9 @@ const services = [
     btnText2: "Learn More",
     bg: "from-yellow-200 to-orange-300 ",
     link: "https://chanrecare.com/",
-    
+
   },
-  
+
   {
     title: "ChanRe Lab",
     shortInfo: "A unit of ChanRe Laboratory Pvt. Ltd.",
@@ -48,7 +48,7 @@ const services = [
     btnText2: "Learn More",
     bg: "from-pink-200 to-rose-300",
     link: "https://chanrelab.com",
-    
+
   },
   {
     title: "ChanRe Journals",
@@ -59,7 +59,7 @@ const services = [
     btnText2: "Learn More",
     bg: "from-sky-200 to-cyan-300",
     link: "https://chanrejournals.com/",
-    
+
   },
   {
     title: "ChanRe Publishers",
@@ -70,7 +70,7 @@ const services = [
     btnText2: "Learn More",
     bg: "from-emerald-200 to-teal-300",
     link: "https://chanrepublisher.com/",
-    
+
   },
   {
     title: "ChanRe Med Soft",
@@ -82,7 +82,7 @@ const services = [
     bg: "from-purple-200 to-fuchsia-300",
     link: "https://chanremedsoft.com",
     link2: "/chanre-medsoft",
-    
+
   },
   {
     title: "ChanRe Bookshop",
@@ -93,7 +93,7 @@ const services = [
     btnText2: "Learn More",
     bg: "from-orange-200 to-amber-300",
     link: "https://chanrebookshop.com",
-    
+
   },
   {
     title: "IARET",
@@ -104,9 +104,9 @@ const services = [
     btnText2: "Learn More",
     bg: "from-red-200 to-rose-300",
     link: "https://www.iaret.org/",
-    
+
   },
- 
+
 ];
 
 function OurUnits() {
@@ -124,73 +124,73 @@ function OurUnits() {
 
   return (
     <>
-    <Helmet>
-      <title>Our Units</title>
-      <meta name="description" content="Explore the various units under Chanre Group." />
-    </Helmet>
-    <section className="py-20 px-6 md:px-20 backdrop-blur-sm ">
-      <motion.h2
-        className="text-4xl font-bold text-center text-blue-900"
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        Our Units
-      </motion.h2>
+      <Helmet>
+        <title>Our Units</title>
+        <meta name="description" content="Explore the various units under Chanre Group." />
+      </Helmet>
+      <section className="py-20 px-6 md:px-20 backdrop-blur-sm ">
+        <motion.h2
+          className="text-4xl font-bold text-center text-blue-900"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          Our Units
+        </motion.h2>
 
-      <motion.p
-        className="text-center text-gray-600 mt-4 max-w-xl mx-auto text-base sm:text-lg"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        Explore our group units that deliver innovation, care, and research across diverse platforms.
-      </motion.p>
+        <motion.p
+          className="text-center text-gray-600 mt-4 max-w-xl mx-auto text-base sm:text-lg"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          Explore our group units that deliver innovation, care, and research across diverse platforms.
+        </motion.p>
 
-      <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-        {services.map((service, index) => (
-          <motion.div
-            key={index}
-            className={`relative bg-gradient-to-br ${service.bg} ${service.shadow}  rounded-2xl h-auto p-6 shadow-md overflow-hidden group transition`}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: index * 0.05 }}
-            viewport={{ once: true }}
-            whileHover={!isMobile ? { scale: 1.03 } : {}}
-            onClick={() => isMobile && setActiveIndex(activeIndex === index ? null : index)}
-          >
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">{service.title}</h3>
-            <p className="text-gray-700 font-semibold text-sm">{service.shortInfo}</p>
-            <p className="mt-3 text-gray-600 text-sm">{service.shortInfo1}</p>
-
+        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service, index) => (
             <motion.div
-              className={`absolute inset-0 bg-[#2a5f64] text-white p-6 flex flex-col justify-center transition-all duration-500 ease-in-out
+              key={index}
+              className={`relative bg-gradient-to-br ${service.bg} ${service.shadow}  rounded-2xl h-auto p-6 shadow-md overflow-hidden group transition`}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.05 }}
+              viewport={{ once: true }}
+              whileHover={!isMobile ? { scale: 1.03 } : {}}
+              onClick={() => isMobile && setActiveIndex(activeIndex === index ? null : index)}
+            >
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">{service.title}</h3>
+              <p className="text-gray-700 font-semibold text-sm">{service.shortInfo}</p>
+              <p className="mt-3 text-gray-600 text-sm">{service.shortInfo1}</p>
+
+              <motion.div
+                className={`absolute inset-0 bg-[#2a5f64] text-white p-6 flex flex-col justify-center transition-all duration-500 ease-in-out
                 ${isMobile ? (activeIndex === index ? 'translate-y-0' : 'translate-y-full') : 'group-hover:translate-y-0 translate-y-full'}
               `}
-            >
-              <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-              <p className="text-sm mb-4">{service.moreInfo}</p>
-              <div className="flex gap-4 mt-4 justify-center">
-              <button
-                onClick={() => window.open(service.link, "_blank")}
-                className="bg-white text-[#2a5f64] font-semibold px-4 py-2 rounded-md hover:bg-blue-100 transition"
               >
-                {service.btnText1}
-              </button>
-              <button
-                onClick={() => window.open(service.link2, "_blank")}
-                className="bg-white text-[#2a5f64] font-semibold px-4 py-2 rounded-md hover:bg-blue-100 transition"
-              >
-                {service.btnText2}
-              </button>
-              </div>
+                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                <p className="text-sm mb-4">{service.moreInfo}</p>
+                <div className="flex gap-4 mt-4 justify-center">
+                  <button
+                    onClick={() => window.open(service.link, "_blank")}
+                    className="bg-white text-[#2a5f64] font-semibold px-4 py-2 rounded-md hover:bg-blue-100 transition"
+                  >
+                    {service.btnText1}
+                  </button>
+                  <button
+                    onClick={() => window.open(service.link2, "_blank")}
+                    className="bg-white text-[#2a5f64] font-semibold px-4 py-2 rounded-md hover:bg-blue-100 transition"
+                  >
+                    {service.btnText2}
+                  </button>
+                </div>
+              </motion.div>
             </motion.div>
-          </motion.div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
     </>
   );
 }
