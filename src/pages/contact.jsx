@@ -56,7 +56,7 @@ const ContactPage = () => {
       </motion.p>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start mt-12">
 
-          <div className="backdrop-blur-xl bg-gradient-to-br from-blue-300 to-blue-200 rounded-3xl shadow-lg p-10 border border-blue-100">
+          <div className="backdrop-blur-xl h-[565px] bg-gradient-to-br from-blue-300 to-blue-200 rounded-3xl shadow-lg p-10 border border-blue-100">
             <motion.h2
               className="text-4xl font-bold mb-4 text-blue-800"
               initial={{ opacity: 0, y: -30 }}
@@ -87,7 +87,7 @@ const ContactPage = () => {
                 placeholder="Your Message"
                 className="p-4 md:col-span-2 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300 transition bg-white/80"
               ></textarea>
-              <div className="md:col-span-2">
+              <div className="md:col-span-2 mt-5">
                 <button
                   type="submit"
                   className="w-full bg-gradient-to-r from-blue-600 to-blue-500 text-white py-4 rounded-xl font-semibold shadow-md hover:from-blue-700 hover:to-blue-600 transition"
