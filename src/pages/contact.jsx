@@ -87,7 +87,7 @@ const ContactPage = () => {
                 placeholder="Your Message"
                 className="p-4 md:col-span-2 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300 transition bg-white/80"
               ></textarea>
-              <div className="md:col-span-2 mt-5">
+              <div className="md:col-span-2 my-7">
                 <button
                   type="submit"
                   className="w-full bg-gradient-to-r from-blue-600 to-blue-500 text-white py-4 rounded-xl font-semibold shadow-md hover:from-blue-700 hover:to-blue-600 transition"
