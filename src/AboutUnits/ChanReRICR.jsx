@@ -1,4 +1,4 @@
-
+import { Link } from "react-router";
 const ChanReRICR = () => {
   return (
 
@@ -50,9 +50,9 @@ const ChanReRICR = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="px-6 py-3 bg-blue-700 text-white rounded-full shadow-md hover:bg-blue-800 transition">
+         <Link to="https://chanrericr.com"><button className="px-6 py-3 bg-blue-700 text-white rounded-full shadow-md cursor-pointer hover:bg-blue-800 transition">
             Visit Our Main Website
-          </button>
+          </button></Link>
         </div>
       </div>
     </section>
